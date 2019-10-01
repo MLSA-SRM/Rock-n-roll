@@ -1,0 +1,169 @@
+.footer-div
+{
+	height: auto;
+	
+
+
+	}
+
+#row1{
+	width: 100%;
+}
+
+.gift{
+	color:white;
+margin-left: 50px;
+	
+}
+
+.gift1
+{
+		color:white;
+		margin-top: 20px;
+}
+
+
+.gift-heading{
+	font-family: 'Amatic SC', cursive;
+font-size: 34px;
+text-align: center;
+}
+
+.label-1{
+	margin-top: 12px;
+	font-size: 12px;
+}
+
+.label-1:hover
+{
+		color:#4F1111;
+	cursor: pointer;
+}
+
+.button-1
+{
+
+	width: 190px;
+	height: 46px;
+	background-color: #4F1111;
+	color: white;
+	border:2px solid #4F1111;
+}
+
+.button-1:focus
+{outline: 0;
+
+}
+
+.button-1:hover
+{
+	background-color:black;
+	border:2px solid black;
+}
+
+.foot{
+	background:#891A1F;
+
+}
+
+.list
+{
+	list-style: none;
+	
+}
+.contact
+{
+	font-size: 18px;
+}
+
+.contact:hover
+{
+	color:#4F1111;
+	cursor: pointer;
+}
+
+.gift-heading-1
+{
+	font-size: 19px;
+	margin-top: -12px;
+}
+
+.input-group-text{
+	background: #4F1111;
+	color:white;
+		border:2px solid #4F1111;
+cursor: pointer;
+
+}
+
+#form-input{
+	width:250px;
+}
+
+.form-in
+{	font-family: 'Amatic SC', cursive;
+
+
+}
+
+.input-group-text:hover
+{
+	background-color: black;
+	border:2px solid black;
+}
+
+.swiggy{
+	width: 50px;
+	height: 50px;
+	
+
+}
+
+.swiggy:hover
+{
+	color:#4F1111;
+	cursor: pointer;
+}
+
+
+.partners-row
+{
+	height: 500px;
+}
+
+.one
+{
+margin-left: -130px;
+margin-top: -25px;
+
+}
+
+.two
+{
+	margin-left: -2px;
+display:none;
+}
+
+.three
+{
+padding-left: 65px;
+margin-top: -20px;
+}
+
+#one-p
+{
+margin-left: 140px;
+}
+#two-p
+{margin-left: -150px;
+
+}
+
+.copy
+{
+	margin-top: 20px;
+	color: black;
+	background-color: 		#B22222;
+}
+
+
