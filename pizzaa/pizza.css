@@ -1,79 +1,18 @@
-.footer-div
+footer
 {
-	height: auto;
-	
-
-
-	}
-
-#row1{
-	width: 100%;
-}
-
-.gift{
-	color:white;
-margin-left: 50px;
-	
-}
-
-.gift1
-{
-		color:white;
-		margin-top: 20px;
-}
-
-
-.gift-heading{
-	font-family: 'Amatic SC', cursive;
-font-size: 34px;
-text-align: center;
-}
-
-.label-1{
-	margin-top: 12px;
-	font-size: 12px;
-}
-
-.label-1:hover
-{
-		color:#4F1111;
-	cursor: pointer;
-}
-
-.button-1
-{
-
-	width: 190px;
-	height: 46px;
-	background-color: #4F1111;
-	color: white;
-	border:2px solid #4F1111;
-}
-
-.button-1:focus
-{outline: 0;
-
-}
-
-.button-1:hover
-{
-	background-color:black;
-	border:2px solid black;
-}
-
-.foot{
 	background:#891A1F;
-
 }
 
+.copy
+{
+	margin-top: 20px;
+	color: black;
+	background-color:#B22222;
+}
 .list
 {
 	list-style: none;
 	
-}
-.contact
-{
-	font-size: 18px;
 }
 
 .contact:hover
@@ -82,88 +21,99 @@ text-align: center;
 	cursor: pointer;
 }
 
-.gift-heading-1
+.contacts
 {
-	font-size: 19px;
-	margin-top: -12px;
+	color: white;
 }
 
-.input-group-text{
-	background: #4F1111;
-	color:white;
-		border:2px solid #4F1111;
-cursor: pointer;
 
-}
-
-#form-input{
-	width:250px;
-}
-
-.form-in
-{	font-family: 'Amatic SC', cursive;
-
-
-}
-
-.input-group-text:hover
+.time
 {
-	background-color: black;
+	color: white;
+}
+
+.maps
+{
+	height: 295px;
+	width: 100%;
+	text-align: center;
+	padding: 5px;
+}
+
+
+.location{
+	color: white;
+}
+
+body
+{
+	font-family: 'Amatic SC', cursive;
+	text-align: justify;
+}
+
+.button-1
+{
+
+	width: 50%;
+	height: 46px;
+	background-color: #4F1111;
+	color: white;
+	border:2px solid #4F1111;
+}
+.button-1:focus
+{outline: 0;
+	
+
+
+}
+.button-1:hover
+{
+	background-color:black;
 	border:2px solid black;
 }
 
 .swiggy{
-	width: 50px;
 	height: 50px;
+	width: 50px;
+}
+
+.partner
+{
+	color: white;
+}
+
+.button-div
+{
+width: 100%;
+
+}
+
+@media only screen and (max-width: 889px)
+{
+	.button-1
+	{
+		width: 100%;
+	}
+
 	
-
 }
 
-.swiggy:hover
+
+@media only screen and (max-width: 576px)
+{.location
+	{
+margin-top:15px;
+	}
+
+
+	.partner
+	{
+		margin-top:20px;
+	}
+
+
+.button-1
 {
-	color:#4F1111;
-	cursor: pointer;
+	width: 50%;
 }
-
-
-.partners-row
-{
-	height: 500px;
 }
-
-.one
-{
-margin-left: -130px;
-margin-top: -25px;
-
-}
-
-.two
-{
-	margin-left: -2px;
-display:none;
-}
-
-.three
-{
-padding-left: 65px;
-margin-top: -20px;
-}
-
-#one-p
-{
-margin-left: 140px;
-}
-#two-p
-{margin-left: -150px;
-
-}
-
-.copy
-{
-	margin-top: 20px;
-	color: black;
-	background-color: 		#B22222;
-}
-
-
