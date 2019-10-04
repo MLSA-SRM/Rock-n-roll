@@ -33,3 +33,12 @@ background: #C00A27;
     font-weight: 800;
     text-transform: uppercase;
 }
+
+#call{
+font-size: 2em;
+    color: white;
+}
+#order{
+color: orange;
+font-size: 1em;
+}
