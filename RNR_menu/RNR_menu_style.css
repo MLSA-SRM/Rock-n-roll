@@ -7,6 +7,12 @@
     width: 10px;
     display: block;
 } */
+/* .dropdown li:hover {
+    cursor: pointer;
+} */
+.pointer{
+  cursor: pointer;
+}
 .texth{
   color: #ff1a1a;
   padding-top: 50px;
