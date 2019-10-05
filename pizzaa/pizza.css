@@ -48,7 +48,7 @@ footer
 body
 {
 	font-family: 'Amatic SC', cursive;
-	text-align: justify;
+	
 }
 
 .button-1
@@ -75,6 +75,7 @@ body
 .swiggy{
 	height: 50px;
 	width: 50px;
+
 }
 
 .partner
@@ -88,6 +89,15 @@ width: 100%;
 
 }
 
+
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
 @media only screen and (max-width: 889px)
 {
 	.button-1
@@ -97,6 +107,7 @@ width: 100%;
 
 	
 }
+
 
 
 @media only screen and (max-width: 576px)
