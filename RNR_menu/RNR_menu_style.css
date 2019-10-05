@@ -1,15 +1,27 @@
 .pad{
   padding: 10%;
 }
-.non {
+/* .non {
     background: url('C:\Users\Admin\Desktop\ROCKNROLL\Rock-n-roll-1\RNR_menu\SVG\NON.svg');
     height: 10px;
     width: 10px;
     display: block;
+} */
+.texth{
+  color: #ff1a1a;
+  padding-top: 50px;
 }
 .card_design{
   width: 18rem;
   border-radius: 50px;
+}
+.veg{
+  border-width: 10px;
+  border-color: #009900;
+}
+.non{
+  border-width: 10px;
+  border-color: #800000;
 }
 .container{
   /* background-color: #2c2c2c; */
@@ -17,3 +29,10 @@
 /* .textw{
   color: #000000;
 } */
+body{
+  background-color: dark grey;
+}
+.nav-tabs .nav-link {
+    border-top-left-radius: 0rem;
+    border-top-right-radius: 0rem;
+}
