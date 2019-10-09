@@ -246,7 +246,8 @@ body {
         width: 50%;
     }
     #myTabContent {
-        color: red;
+        color: white;
+        /* May or may not work out well with different backgrounds; maybe blur image?*/
     }
 }
 
