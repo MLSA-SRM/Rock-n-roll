@@ -41,6 +41,8 @@ html {
 .texth-white {
     color: white;
     padding-top: 50px;
+    font-size: 50px;
+    font-family: 'Roboto Condensed', sans-serif;
 }
 
 .card_design {
