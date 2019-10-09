@@ -30,18 +30,25 @@ html {
     padding-top: 50px;
 }
 
+.texth-white {
+    color: white;
+    padding-top: 50px;
+}
+
 .card_design {
     width: 18rem;
-    border-radius: 10px;
+    /* border-radius: 10px; */
 }
 
 .veg {
-    border-width: 10px;
-    border-color: #009900;
+    /* border-width: 10px; */
+    background-image: url("../img/veg.jpg");
+    background-size: cover;
+    background-position-y: -50px;
 }
 
 .non {
-    border-width: 10px;
+    /* border-width: 10px; */
     border-color: #800000;
 }
 
@@ -224,15 +231,16 @@ footer {
     .button-1 {
         width: 50%;
     }
-    .pizza,
-    .sandwich,
-    .sides,
-    .burger,
-    .pasta,
-    .drinks,
-    .desserts {
-        background-size: cover;
-    }
+}
+
+.pizza,
+.sandwich,
+.sides,
+.burger,
+.pasta,
+.drinks,
+.desserts {
+    background-size: cover;
 }
 
 .pizza {
