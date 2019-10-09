@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Hepta+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower&display=swap');
 html {
     scroll-behavior: smooth;
 }
@@ -9,6 +11,7 @@ html {
 
 .card-body {
     min-height: 124px;
+    min-width: 300px;
 }
 
 .card-text {
@@ -17,8 +20,8 @@ html {
 }
 
 .col-sm-12 {
-    padding-right: 10%;
-    padding-left: 0%;
+    padding-right: 0px;
+    padding-left: 0px;
 }
 
 .pointer {
@@ -28,6 +31,8 @@ html {
 .texth {
     color: black;
     padding-top: 50px;
+    font-size: 50px;
+    font-family: 'Indie Flower', cursive;
 }
 
 .texth-white {
@@ -37,12 +42,13 @@ html {
 
 .card_design {
     width: 18rem;
+    font-family: 'Indie Flower', cursive;
     /* border-radius: 10px; */
 }
 
 .veg {
     /* border-width: 10px; */
-    background-image: url("../img/veg.jpg");
+    /* background-image: url("../img/veg.jpg"); */
     background-size: cover;
     background-position-y: -50px;
     box-shadow: 10px 10px 40px 0 white inset, -15px -15px 40px 0 white inset;
@@ -56,17 +62,6 @@ html {
 .container-fluid {
     padding-right: 0px;
     padding-left: 0px;
-}
-
-
-/* .textw{
-  color: #000000;
-} */
-
-body {
-    /* background-color: rgba(255, 236, 179, 1.0);
-     */
-    /* background-image: url("../img/ambiencefull.jpg") */
 }
 
 .nav-tabs .nav-link {
@@ -170,12 +165,12 @@ footer {
     color: white;
 }
 
-
-/* body
-{
-	font-family: 'Amatic SC', cursive;
-
-} */
+body {
+    /* font-family: 'Hepta Slab', serif; */
+    /* background-color: rgba(255, 236, 179, 1.0);
+    */
+    /* background-image: url("../img/ambiencefull.jpg") */
+}
 
 .button-1 {
     width: 50%;
