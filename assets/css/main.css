@@ -1,8 +1,5 @@
-@font-face {
-    font-family: 'Pinewood';
-    src: url('../fonts/Pinewood.eot?#iefix') format('embedded-opentype'), url('../fonts/Pinewood.woff') format('woff'), url('../fonts/Pinewood.ttf') format('truetype'), url('../fonts/Pinewood.svg#Pinewood') format('svg');
-    font-weight: normal;
-    font-style: normal;
+html {
+    scroll-behavior: smooth;
 }
 
 .pad {
@@ -18,34 +15,18 @@
     position: relative;
     bottom: -10px;
 }
-.col-sm-12{
-  padding-right: 10%;
-  padding-left: 0%;
+
+.col-sm-12 {
+    padding-right: 10%;
+    padding-left: 0%;
 }
-
-/* .background{
-  background-color: black;
-} */
-
-
-/* .non {
-    background: url('C:\Users\Admin\Desktop\ROCKNROLL\Rock-n-roll-1\RNR_menu\SVG\NON.svg');
-    height: 10px;
-    width: 10px;
-    display: block;
-} */
-
-
-/* .dropdown li:hover {
-    cursor: pointer;
-} */
 
 .pointer {
     cursor: pointer;
 }
 
 .texth {
-    color: #ff1a1a;
+    color: black;
     padding-top: 50px;
 }
 
@@ -75,7 +56,9 @@
 } */
 
 body {
-    background-color: rgba(255, 236, 179, 1.0);
+    /* background-color: rgba(255, 236, 179, 1.0);
+     */
+    /* background-image: url("../img/ambiencefull.jpg") */
 }
 
 .nav-tabs .nav-link {
@@ -241,4 +224,55 @@ footer {
     .button-1 {
         width: 50%;
     }
+    .pizza,
+    .sandwich,
+    .sides,
+    .burger,
+    .pasta,
+    .drinks,
+    .desserts {
+        background-size: cover;
+    }
+}
+
+.pizza {
+    background-image: url("../img/backpizza.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.sandwich {
+    background-image: url("../img/backsandwich.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.sides {
+    background-image: url("../img/backsides.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.burger {
+    background-image: url("../img/backburger.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.pasta {
+    background-image: url("../img/backpasta.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.drinks {
+    background-image: url("../img/backdrinks.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.desserts {
+    background-image: url("../img/backdeserts.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
 }
