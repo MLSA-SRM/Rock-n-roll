@@ -225,6 +225,10 @@ body {
     margin-left: 0px;
 }
 
+#myTabContent {
+    color: black;
+}
+
 @media only screen and (max-width: 889px) {
     .button-1 {
         width: 100%;
@@ -242,7 +246,7 @@ body {
         width: 50%;
     }
     #myTabContent {
-        color: white;
+        color: red;
     }
 }
 
@@ -296,8 +300,4 @@ body {
     background-image: url("../img/backdeserts.jpg");
     background-position: center;
     background-repeat: no-repeat;
-}
-
-#myTabContent {
-    color: black;
 }
