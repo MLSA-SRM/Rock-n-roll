@@ -241,6 +241,9 @@ body {
     .button-1 {
         width: 50%;
     }
+    #myTabContent {
+        color: white;
+    }
 }
 
 .pizza,
@@ -293,4 +296,8 @@ body {
     background-image: url("../img/backdeserts.jpg");
     background-position: center;
     background-repeat: no-repeat;
+}
+
+#myTabContent {
+    color: black;
 }
