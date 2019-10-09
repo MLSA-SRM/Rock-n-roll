@@ -10,9 +10,14 @@ html {
     padding-right: 10%;
 }
 
+.card {
+    background-color: transparent !important;
+}
+
 .card-body {
     min-height: 124px;
     min-width: 300px;
+    background-color: transparent;
 }
 
 .card-text {
@@ -65,6 +70,7 @@ html {
 .non {
     /* border-width: 10px; */
     border-color: #800000;
+    box-shadow: 10px 10px 40px 0 white inset, -15px -15px 40px 0 white inset;
 }
 
 .container-fluid {
