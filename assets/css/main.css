@@ -49,6 +49,7 @@ html {
 .veg {
     /* border-width: 10px; */
     /* background-image: url("../img/veg.jpg"); */
+    border-color: #800000;
     background-size: cover;
     background-position-y: -50px;
     box-shadow: 10px 10px 40px 0 white inset, -15px -15px 40px 0 white inset;
