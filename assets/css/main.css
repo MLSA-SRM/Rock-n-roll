@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Hepta+Slab&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap');
 html {
     scroll-behavior: smooth;
 }
@@ -32,7 +33,9 @@ html {
     color: black;
     padding-top: 50px;
     font-size: 50px;
-    font-family: 'Indie Flower', cursive;
+    /* font-family: 'Indie Flower', cursive; */
+    font-family: 'Roboto Condensed', sans-serif;
+    /* font-family: cursive; */
 }
 
 .texth-white {
@@ -42,8 +45,10 @@ html {
 
 .card_design {
     width: 18rem;
-    font-family: 'Indie Flower', cursive;
+    /* font-family: 'Indie Flower', cursive; */
+    /* font-family: cursive; */
     /* border-radius: 10px; */
+    font-family: 'Roboto Condensed', sans-serif;
 }
 
 .veg {
