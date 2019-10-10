@@ -1,0 +1,241 @@
+@font-face {
+    font-family: 'Pinewood';
+    src: url('../fonts/Pinewood.eot?#iefix') format('embedded-opentype'), url('../fonts/Pinewood.woff') format('woff'), url('../fonts/Pinewood.ttf') format('truetype'), url('../fonts/Pinewood.svg#Pinewood') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.pad {
+    padding: 10%;
+    padding-right: 10%;
+}
+
+.card-body {
+    min-height: 124px;
+}
+
+.card-text {
+    position: relative;
+    bottom: -10px;
+}
+
+
+/* .background{
+  background-color: black;
+} */
+
+
+/* .non {
+    background: url('C:\Users\Admin\Desktop\ROCKNROLL\Rock-n-roll-1\RNR_menu\SVG\NON.svg');
+    height: 10px;
+    width: 10px;
+    display: block;
+} */
+
+
+/* .dropdown li:hover {
+    cursor: pointer;
+} */
+
+.pointer {
+    cursor: pointer;
+}
+
+.texth {
+    color: #ff1a1a;
+    padding-top: 50px;
+}
+
+.card_design {
+    width: 18rem;
+    border-radius: 10px;
+}
+
+.veg {
+    border-width: 10px;
+    border-color: #009900;
+}
+
+.non {
+    border-width: 10px;
+    border-color: #800000;
+}
+
+.container-fluid {
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+
+/* .textw{
+  color: #000000;
+} */
+
+body {
+    background-color: rgba(255, 236, 179, 1.0);
+}
+
+.nav-tabs .nav-link {
+    border-top-left-radius: 0rem;
+    border-top-right-radius: 0rem;
+}
+
+.border {
+    border: 2px;
+}
+
+
+/* aayush */
+
+header {
+    
+    z-index: 10;
+    width: 100%;
+}
+
+.bgcolhead {
+    background-color: #C00A27
+}
+
+.navbar-light .navbar-nav .nav-item .nav-link:hover,
+.navbar-light .navbar-nav .nav-item.active .nav-link {
+    background: #262626;
+    color: #fff;
+}
+
+.navbar-light .navbar-nav .nav-item .nav-link {
+    color: #262626;
+    padding: 5px 15px;
+}
+
+.navbar-light .navbar-toggler {
+    border: none;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    border-radius: 0;
+    outline: none;
+}
+
+.navbar-collapse {
+    background: #C00A27;
+}
+
+.nav-item {
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+#call {
+    font-size: 2em;
+    color: white;
+}
+
+#order {
+    color: orange;
+    font-size: 1em;
+}
+
+
+/* VARUN */
+
+footer {
+    background: #891A1F;
+}
+
+.copy {
+    margin-top: 20px;
+    color: black;
+    background-color: #B22222;
+}
+
+.list {
+    list-style: none;
+}
+
+.contact:hover {
+    color: #4F1111;
+    cursor: pointer;
+}
+
+.contacts {
+    color: white;
+}
+
+.time {
+    color: white;
+}
+
+.maps {
+    height: 295px;
+    width: 100%;
+    text-align: center;
+    padding: 5px;
+}
+
+.location {
+    color: white;
+}
+
+
+/* body
+{
+	font-family: 'Amatic SC', cursive;
+
+} */
+
+.button-1 {
+    width: 50%;
+    height: 46px;
+    background-color: #4F1111;
+    color: white;
+    border: 2px solid #4F1111;
+}
+
+.button-1:focus {
+    outline: 0;
+}
+
+.button-1:hover {
+    background-color: black;
+    border: 2px solid black;
+}
+
+.swiggy {
+    height: 50px;
+    width: 50px;
+}
+
+.partner {
+    color: white;
+}
+
+.button-div {
+    width: 100%;
+}
+
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+@media only screen and (max-width: 889px) {
+    .button-1 {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .location {
+        margin-top: 15px;
+    }
+    .partner {
+        margin-top: 20px;
+    }
+    .button-1 {
+        width: 50%;
+    }
+}
