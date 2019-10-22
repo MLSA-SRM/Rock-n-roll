@@ -1,8 +1,8 @@
-@font-face {
-    font-family: 'Pinewood';
-    src: url('../fonts/Pinewood.eot?#iefix') format('embedded-opentype'), url('../fonts/Pinewood.woff') format('woff'), url('../fonts/Pinewood.ttf') format('truetype'), url('../fonts/Pinewood.svg#Pinewood') format('svg');
-    font-weight: normal;
-    font-style: normal;
+@import url('https://fonts.googleapis.com/css?family=Hepta+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap');
+html {
+    scroll-behavior: smooth;
 }
 
 .pad {
@@ -10,72 +10,72 @@
     padding-right: 10%;
 }
 
+.card {
+    background-color: transparent !important;
+}
+
 .card-body {
     min-height: 124px;
+    min-width: 300px;
+    background-color: transparent;
 }
 
 .card-text {
     position: relative;
     bottom: -10px;
 }
-.col-sm-12{
-  padding-right: 10%;
-  padding-left: 0%;
+
+.col-sm-12 {
+    padding-right: 0px;
+    padding-left: 0px;
 }
-
-/* .background{
-  background-color: black;
-} */
-
-
-/* .non {
-    background: url('C:\Users\Admin\Desktop\ROCKNROLL\Rock-n-roll-1\RNR_menu\SVG\NON.svg');
-    height: 10px;
-    width: 10px;
-    display: block;
-} */
-
-
-/* .dropdown li:hover {
-    cursor: pointer;
-} */
 
 .pointer {
     cursor: pointer;
 }
 
 .texth {
-    color: #ff1a1a;
+    color: black;
     padding-top: 50px;
+    font-size: 50px;
+    /* font-family: 'Indie Flower', cursive; */
+    font-family: 'Roboto Condensed', sans-serif;
+    /* font-family: cursive; */
+}
+
+.texth-white {
+    color: white;
+    padding-top: 50px;
+    font-size: 50px;
+    font-family: 'Roboto Condensed', sans-serif;
 }
 
 .card_design {
     width: 18rem;
-    border-radius: 10px;
+    /* font-family: 'Indie Flower', cursive; */
+    /* font-family: cursive; */
+    /* border-radius: 10px; */
+    font-family: 'Roboto Condensed', sans-serif;
 }
 
 .veg {
-    border-width: 10px;
-    border-color: #009900;
+    /* border-width: 10px; */
+    /* background-image: url("../img/veg.jpg"); */
+    border-color: #800000;
+    background-size: cover;
+    background-position-y: -50px;
+    box-shadow: 10px 10px 40px 0 white inset, -15px -15px 40px 0 white inset;
 }
 
 .non {
-    border-width: 10px;
+    /* border-width: 10px; */
     border-color: #800000;
+    box-shadow: 10px 10px 40px 0 white inset, -15px -15px 40px 0 white inset;
 }
 
 .container-fluid {
     padding-right: 0px;
     padding-left: 0px;
-}
-
-
-/* .textw{
-  color: #000000;
-} */
-
-body {
-    background-color: rgba(255, 236, 179, 1.0);
 }
 
 .nav-tabs .nav-link {
@@ -179,12 +179,12 @@ footer {
     color: white;
 }
 
-
-/* body
-{
-	font-family: 'Amatic SC', cursive;
-
-} */
+body {
+    /* font-family: 'Hepta Slab', serif; */
+    /* background-color: rgba(255, 236, 179, 1.0);
+    */
+    /* background-image: url("../img/ambiencefull.jpg") */
+}
 
 .button-1 {
     width: 50%;
@@ -225,6 +225,10 @@ footer {
     margin-left: 0px;
 }
 
+#myTabContent {
+    color: black;
+}
+
 @media only screen and (max-width: 889px) {
     .button-1 {
         width: 100%;
@@ -241,4 +245,60 @@ footer {
     .button-1 {
         width: 50%;
     }
+    #myTabContent {
+        color: white;
+        /* May or may not work out well with different backgrounds; maybe blur image?*/
+    }
+}
+
+.pizza,
+.sandwich,
+.sides,
+.burger,
+.pasta,
+.drinks,
+.desserts {
+    background-size: cover;
+}
+
+.pizza {
+    background-image: url("../img/backpizza.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.sandwich {
+    background-image: url("../img/backsandwich.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.sides {
+    background-image: url("../img/backsides.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.burger {
+    background-image: url("../img/backburger.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.pasta {
+    background-image: url("../img/backpasta.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.drinks {
+    background-image: url("../img/backdrinks.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.desserts {
+    background-image: url("../img/backdeserts.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
 }

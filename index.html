@@ -10,9 +10,6 @@
     <link rel='shortcut icon' href='assets/img/ambience.jpg' type='image/x-icon' />
     <meta name="keywords" content="Pizza,Wood Oven, Pizzeria, Chennai, SRM, Potheri, Kanchipuram, Pasta, Garlic Breads">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="assets/css/main.css">
 </head>
 <style>
@@ -35,6 +32,7 @@
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <div class="container">
+                <h1>THE ROCK N ROLL CAFE - Wood Oven Pizzeria!</h1>
                 <ul class="navbar-nav ml-lg-5">
                     <li class="nav-item active">
                         <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
@@ -43,10 +41,10 @@
                         <a class="nav-link" href="#">Offers</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contact Us</a>
+                        <a class="nav-link" href="#bottom">Contact Us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="https://www.zomato.com/chennai/the-rock-n-roll-cafe-potheri">Order Now!</a>
+                        <a class="nav-link" href="tel:044-2987-4444">Order Now!</a>
                     </li>
                 </ul>
             </div>
@@ -118,19 +116,20 @@
             </ul>
         </div>
 
-        <div class="dropdown-content" id="myTabContent" style="font-family: Pinewood; color:#5D4037">
+        <div class="dropdown-content" id="myTabContent">
 
             <div id="accordion">
                 <!-- pizza content -->
-                <div class="collapse" id="regular_pizza" data-parent="#accordion">
-                    <h3 class="text-center texth">Regular PIzza (Avaiable only in 7 inches)</h3>
+                <div class="collapse pizza" id="regular_pizza" data-parent="#accordion">
+                    <h3 class="text-center texth">Regular Pizza</h3>
+                    <h3 class="text-center texth" style="margin: 0px; padding: 0px"><sup> (Available only in 7 inches)</sup></h3>
                     <div class="container">
                         <div class="row">
                             <div class="col-sm-12 col-md-4">
                                 <div class="pad">
                                     <div class="card card_design veg">
                                         <div class="card-body">
-                                            <h3 class="card-title text-center">Marghereta</h3>
+                                            <h3 class="card-title text-center">Margherita</h3>
                                             <p class="card-text text-center">₹100</p>
                                         </div>
                                     </div>
@@ -384,7 +383,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="collapse" id="italian_classic_pizza" data-parent="#accordion">
+                <div class="collapse pizza" id="italian_classic_pizza" data-parent="#accordion">
                     <h3 class="text-center texth">Italian Classic Pizza</h3>
                     <div class="container">
                         <div class="row">
@@ -411,7 +410,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="collapse" id="signature_pizza" data-parent="#accordion">
+                <div class="collapse pizza" id="signature_pizza" data-parent="#accordion">
                     <h3 class="text-center texth">Veggie Delight Pizzas</h3>
                     <div class="container">
                         <div class="row">
@@ -531,7 +530,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="collapse" id="grilled_chicken_pizza" data-parent="#accordion">
+                <div class="collapse pizza" id="grilled_chicken_pizza" data-parent="#accordion">
                     <h3 class="text-center texth">Grilled Chicken Pizza</h3>
                     <div class="container">
                         <div class="row">
@@ -579,7 +578,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="collapse" id="chicken_sausage_pizza" data-parent="#accordion">
+                <div class="collapse pizza" id="chicken_sausage_pizza" data-parent="#accordion">
                     <h3 class="text-center texth">Chicken Sausage Pizza</h3>
                     <div class="container">
                         <div class="row">
@@ -616,7 +615,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="collapse" id="hawaiian_pizza" data-parent="#accordion">
+                <div class="collapse pizza" id="hawaiian_pizza" data-parent="#accordion">
                     <h3 class="text-center texth">Hawaiian Pizza</h3>
                     <div class="container">
                         <div class="row">
@@ -644,7 +643,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="collapse" id="imported_meat_pizza" data-parent="#accordion">
+                <div class="collapse pizza" id="imported_meat_pizza" data-parent="#accordion">
                     <h3 class="text-center texth">Imported Meat pizza</h3>
                     <div class="container">
                         <div class="row">
@@ -693,11 +692,12 @@
                     </div>
                 </div>
 
-                <!-- Starters -->
+                <!-- Sides -->
 
-                <div class="collapse" id="starters" data-parent="#accordion">
+                <div class="collapse sides" id="starters" data-parent="#accordion">
                     <div class="container">
-                        <h3 class="text-center texth" style="padding-top: 50px;">Fries(Served with Garlic Mayo)</h3>
+                        <h3 class="text-center texth-white" style="padding-top: 50px;">Fries</h3>
+                        <h4 class="text-center texth-white" style="margin: 0px; padding: 0px">(Served with Garlic Mayo)</h4>
                         <div class="row">
                             <div class="col-sm-12 col-md-6">
                                 <div class="pad d-flex justify-content-center">
@@ -811,7 +811,7 @@
 
                 <!-- salads -->
 
-                <div class="collapse" id="salads" data-parent="#accordion">
+                <div class="collapse sides" id="salads" data-parent="#accordion">
                     <h1 class="text-center texth" style="padding-top: 50px;">Healthy Salads</h1>
                     <div class="container">
                         <div class="row">
@@ -857,8 +857,9 @@
 
                 <!-- pastas -->
 
-                <div class="collapse" id="pastas" data-parent="#accordion">
-                    <h3 class="text-center texth">Delicious Italian Pasta(Served eith Garlic Bread)</h3>
+                <div class="collapse pasta" id="pastas" data-parent="#accordion">
+                    <h3 class="text-center texth">Delicious Italian Pasta</h3>
+                    <h4 class="text-center texth" style="margin: 0px; padding: 0px">(Served with Garlic Bread)</h4>
                     <div class="container">
                         <div class="row">
                             <div class="col-sm-12 col-md-6">
@@ -887,8 +888,10 @@
 
                 <!-- burgers -->
 
-                <div class="collapse" id="burgers" data-parent="#accordion">
-                    <h3 class="text-center texth">Burger(Served along with French Fries)</h3>
+                <div class="collapse burger" id="burgers" data-parent="#accordion">
+                    <h3 class="text-center texth">Burger</h3>
+                    <h4 class="text-center texth" style="margin: 0px; padding: 0px"> <sup>(Served with French Fries)</sup></h4>
+
                     <div class="container">
                         <div class="row">
                             <div class="col-sm-12 col-md-4">
@@ -1009,7 +1012,7 @@
 
                 <!-- sandwiches -->
 
-                <div class="collapse" id="sandwiches" data-parent="#accordion">
+                <div class="collapse sandwich" id="sandwiches" data-parent="#accordion">
                     <h3 class="text-center texth">Grilled Cheesy Sandwich</h3>
                     <div class="container">
                         <div class="row">
@@ -1171,7 +1174,7 @@
 
                 <!-- Drinks -->
 
-                <div class="collapse" id="refreshing_cooler" data-parent="#accordion">
+                <div class="collapse drinks" id="refreshing_cooler" data-parent="#accordion">
                     <h3 class="text-center texth">Refreshing Coolers</h3>
                     <div class="container">
                         <div class="row">
@@ -1258,8 +1261,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="collapse" id="milkshakes" data-parent="#accordion">
-                    <h3 class="text-center texth">Milkshakes(with Ice Cream)</h3>
+                <div class="collapse drinks" id="milkshakes" data-parent="#accordion">
+                    <h3 class="text-center texth">Ice Cream Milkshakes</h3>
                     <div class="container">
                         <div class="row">
                             <div class="col-sm-12 col-md-4">
@@ -1345,9 +1348,7 @@
                         </div>
                     </div>
                 </div>
-                <!-- <div class="collapse" id="Seasonal Fruit Juices">
-				</div> -->
-                <div class="collapse" id="smooties" data-parent="#accordion">
+                <div class="collapse drinks" id="smooties" data-parent="#accordion">
                     <div class="container">
                         <div class="row">
                             <div class="col-sm-12 col-md-4">
@@ -1384,7 +1385,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="collapse" id="hot_beverages" data-parent="#accordion">
+                <div class="collapse drinks" id="hot_beverages" data-parent="#accordion">
                     <div class="container">
                         <div class="row">
                             <div class="col-sm-12 col-md-4">
@@ -1420,7 +1421,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="collapse" id="cold_beverages" data-parent="#accordion">
+                <div class="collapse drinks" id="cold_beverages" data-parent="#accordion">
                     <div class="container">
                         <div class="row">
                             <div class="col-sm-12 col-md-4">
@@ -1479,7 +1480,7 @@
 
                 <!-- Desserts -->
 
-                <div class="collapse" id="desserts" data-parent="#accordion">
+                <div class="collapse desserts" id="desserts" data-parent="#accordion">
                     <div class="container">
                         <h3 class="text-center texth">Heavenly Desserts</h3>
                         <div class="row">
@@ -1590,17 +1591,16 @@
                     </div>
                 </div>
             </div>
-
-            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" style="border-top: 10px solid black">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="assets/img/pizza.jpg" class="d-block w-100" alt="...">
+                        <img src="assets/img/ambienceslider1.jpg" class="d-block w-100" alt="Rock N Roll Ambience">
                     </div>
                     <div class="carousel-item">
-                        <img src="assets/img/sandwich.jpg" class="d-block w-100" alt="...">
+                        <img src="assets/img/ambienceslider2.jpg" class="d-block w-100" alt="Rock N Roll Ambience">
                     </div>
                     <div class="carousel-item">
-                        <img src="assets/img/pasta.jpg" class="d-block w-100" alt="...">
+                        <img src="assets/img/ambienceslider3.jpg" class="d-block w-100" alt="Rock N Roll Ambience">
                     </div>
                 </div>
                 <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -1616,7 +1616,7 @@
 
         <!-- FOOTER -->
 
-        <footer class="page-footer foot" style="height: auto;padding-top: 20px;padding-left: 10px;padding-right: 10px;">
+        <footer class="page-footer foot" id="bottom" style="height: auto;padding-top: 20px;padding-left: 10px;padding-right: 10px;">
 
             <div class="d-flex" style="padding-left: 5px;">
 
@@ -1629,7 +1629,7 @@
                     <div class="col-sm-3 text-center col-12">
 
 
-                        <div class="contacts " style="width: 100%;padding-left:12px; text-align: center;">
+                        <div class="contacts" style="width: 100%;padding-left:12px; text-align: center;">
                             <h3 class="text-center">Reach Out</h3>
                             <div class="text-center">
                                 <p><a href="tel:044-29874444" style="color: white;text-decoration: none;">044-2987-4444</a>
@@ -1637,10 +1637,10 @@
                                 <div class="container">
                                     <div class="row">
                                         <div class="col-6">
-                                            <img class="swiggy" id="t" style="float:right; margin-left: 7px; " src="assets/img/fb.jpg">
+                                            <a href="https://www.facebook.com/rocknrollcafe.in/"><img class="swiggy" id="t" style="float:right; margin-left: 7px; " src="assets/img/fb.jpg"></a>
                                         </div>
                                         <div class="col-6">
-                                            <img class="swiggy" id="q" style="float: left; margin-left: -12px;" src="assets/img/insta.png">
+                                            <a href="https://www.instagram.com/therocknrollcafe/"> <img class="swiggy" id="q" style="float: left; margin-left: -12px;" src="assets/img/insta.png"></a>
                                         </div>
                                     </div>
                                 </div>
@@ -1735,5 +1735,8 @@
 
     </div>
 </body>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
 </html>
