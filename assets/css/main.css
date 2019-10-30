@@ -14,6 +14,20 @@ html {
     background-color: transparent !important;
 }
 
+table.borderless td,table.borderless th{
+ border: none !important;
+}
+ .minpic{
+   min-height: 428.28px;
+ }
+
+.pad5{
+  margin-top: 5%;
+}
+
+.table td, .table th{
+  border-top: none;
+}
 .card-body {
     min-height: 124px;
     min-width: 300px;
@@ -33,7 +47,9 @@ html {
 .pointer {
     cursor: pointer;
 }
-
+.textw{
+  color: white;
+}
 .texth {
     color: black;
     padding-top: 50px;
