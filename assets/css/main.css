@@ -89,6 +89,10 @@ table.borderless td,table.borderless th{
     box-shadow: 10px 10px 40px 0 white inset, -15px -15px 40px 0 white inset;
 }
 
+
+element.style {
+}
+
 .container-fluid {
     padding-right: 0px;
     padding-left: 0px;
