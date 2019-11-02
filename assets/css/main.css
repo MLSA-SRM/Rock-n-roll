@@ -255,6 +255,12 @@ body {
     }
 }
 
+@media only screen and (min-width: 768px) {
+    .we {
+        padding-left: 28px;
+    }
+}
+
 @media only screen and (max-width: 576px) {
     .location {
         margin-top: 15px;
