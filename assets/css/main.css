@@ -10,10 +10,6 @@ html {
     padding-right: 10%;
 }
 
-a{
-text-decoration: none;
-
-}
 .card {
     background-color: transparent !important;
 }
@@ -137,8 +133,8 @@ header {
 
 .navbar-light .navbar-toggler {
     border: none;
-    
-    
+    color: #fff;
+    border: 2px solid #7f7f7f;
     border-radius: 0;
     outline: none;
 }
@@ -256,6 +252,12 @@ body {
 @media only screen and (max-width: 889px) {
     .button-1 {
         width: 100%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .we {
+        padding-left: 28px;
     }
 }
 

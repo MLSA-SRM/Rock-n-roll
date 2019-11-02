@@ -26,9 +26,11 @@
         <a class="navbar-brand" href="#" style="max-width: 30%;">
             <img src="assets/img/rocknrolllogo.png" class="img-fluid">
         </a>
-       
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
 
-        <div class=" navbar-collapse" id="navbarSupportedContent">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <div class="container">
                 <h1>THE ROCK N ROLL CAFE - Wood Oven Pizzeria!</h1>
                 <ul class="navbar-nav ml-lg-5">
@@ -85,11 +87,11 @@
                     <span class="sr-only">Next</span>
                 </a>
             </div>
-           <div class="bg-danger container-fluid">
-              <ul class="nav ml-lg-5  justify-content-center " id="myTab"  style="">
+            <div class="bg-danger">
+              <ul class="nav justify-content-center" id="myTab" role="tablist" style="border-radius: 0px;">
                 <!-- pizza -->
-                <li class="nav-item   dropdown pointer">
-                  <a class="nav-link bg-danger text-light dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" role="button veg" >Pizzas</a>
+                <li class="nav-item dropdown pointer">
+                  <a class="nav-link bg-danger text-light dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" role="button veg" aria-haspopup="true" aria-expanded="false">Pizzas</a>
                   <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                     <a class="dropdown-item text-danger" data-toggle="collapse" href="#regular_pizza" role="button" aria-expanded="false" aria-controls="regular_pizza">Regular Pizza</a>
                     <a class="dropdown-item text-danger" data-toggle="collapse" href="#italian_classic_pizza" role="button" aria-expanded="false" aria-controls="italian_classic_pizza">Italian Classic Pizza</a>
@@ -114,11 +116,11 @@
                 </li>
                 <!-- burgers -->
                 <li class="nav-item bg-danger">
-                  <a class="nav-link text-light bg-danger" data-toggle="collapse" href="#burgers" role="tab" aria-expanded="false" aria-controls="burgers">Burgers</a>
+                  <a class="nav-link text-light" data-toggle="collapse" href="#burgers" role="tab" aria-expanded="false" aria-controls="burgers">Burgers</a>
                 </li>
                 <!-- pastas -->
                 <li class="nav-item bg-danger">
-                  <a class="nav-link bg-danger text-light" data-toggle="collapse" href="#pastas" role="tab" aria-expanded="false" aria-controls="pastas">Pastas</a>
+                  <a class="nav-link text-light" data-toggle="collapse" href="#pastas" role="tab" aria-expanded="false" aria-controls="pastas">Pastas</a>
                 </li>
                 <!-- drinks -->
                 <li class="nav-item dropdown pointer">
@@ -132,8 +134,8 @@
                   </div>
                 </li>
                 <!-- desserts -->
-                <li class="nav-item  bg-danger">
-                  <a class="nav-link bg-danger text-light" data-toggle="collapse" href="#desserts" role="tab" aria-expanded="false" aria-controls="desserts">Desserts</a>
+                <li class="nav-item bg-danger">
+                  <a class="nav-link text-light" data-toggle="collapse" href="#desserts" role="tab" aria-expanded="false" aria-controls="desserts">Desserts</a>
                 </li>
               </ul>
             </div>
@@ -145,51 +147,51 @@
                 <div class="collapse pizza" id="regular_pizza" data-parent="#accordion">
                   <div class="bg-danger container-fluid">
                     <div class="row">
-                      <div class="col-sm-12 col-md-6">
+                      <div class="col-sm-12 col-md-6 ">
                         <img src="assets\img\pizza.jpg" class="img-fluid minpic">
                       </div>
-                      <div class="col-sm-12 col-md-6 ">
-                        <table class="table textw pad5">
+                      <div class="col-sm-12 col-md-6 we" style="">
+                        <table class="table textw" >
                           <tbody>
                            <tr>
                         <td><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22" height="22" viewBox="0 0 48 48"  style="margin-bottom: -8px;">
-  <image  href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAACFklEQVRYhe2YvW7TUBSAv2M7NF1SlQnRiLUVLAiBWqtG5AVo0ycBoorSrQMo0MEV3dh4hKZPkEoOqSokNrrzN0LbpaA6OeiSRGLBduKLmiGfZMmS7XO/e8+5vteWpTBQxghnnGQM3uDksBbJZYoMMjV2IzQRSmN8i3oY/NC/irhVVFe6yIJA2Tyu8AXlGGG/8Iu9aDP68V+F/NCfVnVrCk9RSiD8PTUF5hHmgWo8xc5SeH9biHfatfZ51jYyp2z51fJ1Ve8A4TkYmVRmQF90cd8Fr4MbVoUWdyvlTkGOEL2XNfAAgdtxh5Yf+nNWhEyaJI4bQKaA/6AM7l5lq1LMLdQVZx24k0PmDwp3z0vx41xCZjaJynpemQECz4J6MDuyEDhrGQs4KzPxFVnNIcRDizI9RFeSLicKKc4t2z4KN0cWAr1m2cfUUeJsvYy1rJt0MU3om12X9JjJNaR8tK5DcszkERL2bduI0hhZyKFjHj61JaNwMuV4iZ1MFGrX2t9Btm0JiUi9+aR5MrKQoXjmhgLvLfgcFU/d3bSbUoWaW82f0KlidoOj89m90LVerJxC9FL31b3QRdPL4ZX0g+cStDZamV4hmV+MJmDxzHugsJml0E0BI7Ix65X86FH0KWs7Q+2p+0P+MqgHb8yqreiqCAv0N/n9tB6DNqal0Egr4NxCA/pfE2/7h1UmH4ppTITSmPxBSwT4DSSSm+a3NIEbAAAAAElFTkSuQmCC"/>
+  <image  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAACFklEQVRYhe2YvW7TUBSAv2M7NF1SlQnRiLUVLAiBWqtG5AVo0ycBoorSrQMo0MEV3dh4hKZPkEoOqSokNrrzN0LbpaA6OeiSRGLBduKLmiGfZMmS7XO/e8+5vteWpTBQxghnnGQM3uDksBbJZYoMMjV2IzQRSmN8i3oY/NC/irhVVFe6yIJA2Tyu8AXlGGG/8Iu9aDP68V+F/NCfVnVrCk9RSiD8PTUF5hHmgWo8xc5SeH9biHfatfZ51jYyp2z51fJ1Ve8A4TkYmVRmQF90cd8Fr4MbVoUWdyvlTkGOEL2XNfAAgdtxh5Yf+nNWhEyaJI4bQKaA/6AM7l5lq1LMLdQVZx24k0PmDwp3z0vx41xCZjaJynpemQECz4J6MDuyEDhrGQs4KzPxFVnNIcRDizI9RFeSLicKKc4t2z4KN0cWAr1m2cfUUeJsvYy1rJt0MU3om12X9JjJNaR8tK5DcszkERL2bduI0hhZyKFjHj61JaNwMuV4iZ1MFGrX2t9Btm0JiUi9+aR5MrKQoXjmhgLvLfgcFU/d3bSbUoWaW82f0KlidoOj89m90LVerJxC9FL31b3QRdPL4ZX0g+cStDZamV4hmV+MJmDxzHugsJml0E0BI7Ix65X86FH0KWs7Q+2p+0P+MqgHb8yqreiqCAv0N/n9tB6DNqal0Egr4NxCA/pfE2/7h1UmH4ppTITSmPxBSwT4DSSSm+a3NIEbAAAAAElFTkSuQmCC"/>
 </svg>Margeritha Pizza</td>
                         <td>₹100</td>
                       </tr>
                       <tr>
                         <td><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22" height="22" viewBox="0 0 48 48"  style="margin-bottom: -8px;">
-  <image  href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAACFklEQVRYhe2YvW7TUBSAv2M7NF1SlQnRiLUVLAiBWqtG5AVo0ycBoorSrQMo0MEV3dh4hKZPkEoOqSokNrrzN0LbpaA6OeiSRGLBduKLmiGfZMmS7XO/e8+5vteWpTBQxghnnGQM3uDksBbJZYoMMjV2IzQRSmN8i3oY/NC/irhVVFe6yIJA2Tyu8AXlGGG/8Iu9aDP68V+F/NCfVnVrCk9RSiD8PTUF5hHmgWo8xc5SeH9biHfatfZ51jYyp2z51fJ1Ve8A4TkYmVRmQF90cd8Fr4MbVoUWdyvlTkGOEL2XNfAAgdtxh5Yf+nNWhEyaJI4bQKaA/6AM7l5lq1LMLdQVZx24k0PmDwp3z0vx41xCZjaJynpemQECz4J6MDuyEDhrGQs4KzPxFVnNIcRDizI9RFeSLicKKc4t2z4KN0cWAr1m2cfUUeJsvYy1rJt0MU3om12X9JjJNaR8tK5DcszkERL2bduI0hhZyKFjHj61JaNwMuV4iZ1MFGrX2t9Btm0JiUi9+aR5MrKQoXjmhgLvLfgcFU/d3bSbUoWaW82f0KlidoOj89m90LVerJxC9FL31b3QRdPL4ZX0g+cStDZamV4hmV+MJmDxzHugsJml0E0BI7Ix65X86FH0KWs7Q+2p+0P+MqgHb8yqreiqCAv0N/n9tB6DNqal0Egr4NxCA/pfE2/7h1UmH4ppTITSmPxBSwT4DSSSm+a3NIEbAAAAAElFTkSuQmCC"/>
+  <image  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAACFklEQVRYhe2YvW7TUBSAv2M7NF1SlQnRiLUVLAiBWqtG5AVo0ycBoorSrQMo0MEV3dh4hKZPkEoOqSokNrrzN0LbpaA6OeiSRGLBduKLmiGfZMmS7XO/e8+5vteWpTBQxghnnGQM3uDksBbJZYoMMjV2IzQRSmN8i3oY/NC/irhVVFe6yIJA2Tyu8AXlGGG/8Iu9aDP68V+F/NCfVnVrCk9RSiD8PTUF5hHmgWo8xc5SeH9biHfatfZ51jYyp2z51fJ1Ve8A4TkYmVRmQF90cd8Fr4MbVoUWdyvlTkGOEL2XNfAAgdtxh5Yf+nNWhEyaJI4bQKaA/6AM7l5lq1LMLdQVZx24k0PmDwp3z0vx41xCZjaJynpemQECz4J6MDuyEDhrGQs4KzPxFVnNIcRDizI9RFeSLicKKc4t2z4KN0cWAr1m2cfUUeJsvYy1rJt0MU3om12X9JjJNaR8tK5DcszkERL2bduI0hhZyKFjHj61JaNwMuV4iZ1MFGrX2t9Btm0JiUi9+aR5MrKQoXjmhgLvLfgcFU/d3bSbUoWaW82f0KlidoOj89m90LVerJxC9FL31b3QRdPL4ZX0g+cStDZamV4hmV+MJmDxzHugsJml0E0BI7Ix65X86FH0KWs7Q+2p+0P+MqgHb8yqreiqCAv0N/n9tB6DNqal0Egr4NxCA/pfE2/7h1UmH4ppTITSmPxBSwT4DSSSm+a3NIEbAAAAAElFTkSuQmCC"/>
 </svg>Musroom & Onion Pizza</td>
                         <td>₹120</td>
                       </tr>
                       <tr>
                         <td><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22" height="22" viewBox="0 0 48 48"  style="margin-bottom: -8px;">
-  <image  href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAACFklEQVRYhe2YvW7TUBSAv2M7NF1SlQnRiLUVLAiBWqtG5AVo0ycBoorSrQMo0MEV3dh4hKZPkEoOqSokNrrzN0LbpaA6OeiSRGLBduKLmiGfZMmS7XO/e8+5vteWpTBQxghnnGQM3uDksBbJZYoMMjV2IzQRSmN8i3oY/NC/irhVVFe6yIJA2Tyu8AXlGGG/8Iu9aDP68V+F/NCfVnVrCk9RSiD8PTUF5hHmgWo8xc5SeH9biHfatfZ51jYyp2z51fJ1Ve8A4TkYmVRmQF90cd8Fr4MbVoUWdyvlTkGOEL2XNfAAgdtxh5Yf+nNWhEyaJI4bQKaA/6AM7l5lq1LMLdQVZx24k0PmDwp3z0vx41xCZjaJynpemQECz4J6MDuyEDhrGQs4KzPxFVnNIcRDizI9RFeSLicKKc4t2z4KN0cWAr1m2cfUUeJsvYy1rJt0MU3om12X9JjJNaR8tK5DcszkERL2bduI0hhZyKFjHj61JaNwMuV4iZ1MFGrX2t9Btm0JiUi9+aR5MrKQoXjmhgLvLfgcFU/d3bSbUoWaW82f0KlidoOj89m90LVerJxC9FL31b3QRdPL4ZX0g+cStDZamV4hmV+MJmDxzHugsJml0E0BI7Ix65X86FH0KWs7Q+2p+0P+MqgHb8yqreiqCAv0N/n9tB6DNqal0Egr4NxCA/pfE2/7h1UmH4ppTITSmPxBSwT4DSSSm+a3NIEbAAAAAElFTkSuQmCC"/>
+  <image  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAACFklEQVRYhe2YvW7TUBSAv2M7NF1SlQnRiLUVLAiBWqtG5AVo0ycBoorSrQMo0MEV3dh4hKZPkEoOqSokNrrzN0LbpaA6OeiSRGLBduKLmiGfZMmS7XO/e8+5vteWpTBQxghnnGQM3uDksBbJZYoMMjV2IzQRSmN8i3oY/NC/irhVVFe6yIJA2Tyu8AXlGGG/8Iu9aDP68V+F/NCfVnVrCk9RSiD8PTUF5hHmgWo8xc5SeH9biHfatfZ51jYyp2z51fJ1Ve8A4TkYmVRmQF90cd8Fr4MbVoUWdyvlTkGOEL2XNfAAgdtxh5Yf+nNWhEyaJI4bQKaA/6AM7l5lq1LMLdQVZx24k0PmDwp3z0vx41xCZjaJynpemQECz4J6MDuyEDhrGQs4KzPxFVnNIcRDizI9RFeSLicKKc4t2z4KN0cWAr1m2cfUUeJsvYy1rJt0MU3om12X9JjJNaR8tK5DcszkERL2bduI0hhZyKFjHj61JaNwMuV4iZ1MFGrX2t9Btm0JiUi9+aR5MrKQoXjmhgLvLfgcFU/d3bSbUoWaW82f0KlidoOj89m90LVerJxC9FL31b3QRdPL4ZX0g+cStDZamV4hmV+MJmDxzHugsJml0E0BI7Ix65X86FH0KWs7Q+2p+0P+MqgHb8yqreiqCAv0N/n9tB6DNqal0Egr4NxCA/pfE2/7h1UmH4ppTITSmPxBSwT4DSSSm+a3NIEbAAAAAElFTkSuQmCC"/>
 </svg>Mushroom & Jalapeno Pizza</td>
                         <td>₹120</td>
                       </tr>
                       <tr>
                         <td><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22" height="22" viewBox="0 0 48 48"  style="margin-bottom: -8px;">
-  <image href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAACFklEQVRYhe2YvW7TUBSAv2M7NF1SlQnRiLUVLAiBWqtG5AVo0ycBoorSrQMo0MEV3dh4hKZPkEoOqSokNrrzN0LbpaA6OeiSRGLBduKLmiGfZMmS7XO/e8+5vteWpTBQxghnnGQM3uDksBbJZYoMMjV2IzQRSmN8i3oY/NC/irhVVFe6yIJA2Tyu8AXlGGG/8Iu9aDP68V+F/NCfVnVrCk9RSiD8PTUF5hHmgWo8xc5SeH9biHfatfZ51jYyp2z51fJ1Ve8A4TkYmVRmQF90cd8Fr4MbVoUWdyvlTkGOEL2XNfAAgdtxh5Yf+nNWhEyaJI4bQKaA/6AM7l5lq1LMLdQVZx24k0PmDwp3z0vx41xCZjaJynpemQECz4J6MDuyEDhrGQs4KzPxFVnNIcRDizI9RFeSLicKKc4t2z4KN0cWAr1m2cfUUeJsvYy1rJt0MU3om12X9JjJNaR8tK5DcszkERL2bduI0hhZyKFjHj61JaNwMuV4iZ1MFGrX2t9Btm0JiUi9+aR5MrKQoXjmhgLvLfgcFU/d3bSbUoWaW82f0KlidoOj89m90LVerJxC9FL31b3QRdPL4ZX0g+cStDZamV4hmV+MJmDxzHugsJml0E0BI7Ix65X86FH0KWs7Q+2p+0P+MqgHb8yqreiqCAv0N/n9tB6DNqal0Egr4NxCA/pfE2/7h1UmH4ppTITSmPxBSwT4DSSSm+a3NIEbAAAAAElFTkSuQmCC"/>
+  <image  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAACFklEQVRYhe2YvW7TUBSAv2M7NF1SlQnRiLUVLAiBWqtG5AVo0ycBoorSrQMo0MEV3dh4hKZPkEoOqSokNrrzN0LbpaA6OeiSRGLBduKLmiGfZMmS7XO/e8+5vteWpTBQxghnnGQM3uDksBbJZYoMMjV2IzQRSmN8i3oY/NC/irhVVFe6yIJA2Tyu8AXlGGG/8Iu9aDP68V+F/NCfVnVrCk9RSiD8PTUF5hHmgWo8xc5SeH9biHfatfZ51jYyp2z51fJ1Ve8A4TkYmVRmQF90cd8Fr4MbVoUWdyvlTkGOEL2XNfAAgdtxh5Yf+nNWhEyaJI4bQKaA/6AM7l5lq1LMLdQVZx24k0PmDwp3z0vx41xCZjaJynpemQECz4J6MDuyEDhrGQs4KzPxFVnNIcRDizI9RFeSLicKKc4t2z4KN0cWAr1m2cfUUeJsvYy1rJt0MU3om12X9JjJNaR8tK5DcszkERL2bduI0hhZyKFjHj61JaNwMuV4iZ1MFGrX2t9Btm0JiUi9+aR5MrKQoXjmhgLvLfgcFU/d3bSbUoWaW82f0KlidoOj89m90LVerJxC9FL31b3QRdPL4ZX0g+cStDZamV4hmV+MJmDxzHugsJml0E0BI7Ix65X86FH0KWs7Q+2p+0P+MqgHb8yqreiqCAv0N/n9tB6DNqal0Egr4NxCA/pfE2/7h1UmH4ppTITSmPxBSwT4DSSSm+a3NIEbAAAAAElFTkSuQmCC"/>
 </svg>Mushroom & Olives Pizza</td>
                         <td>₹120</td>
                       </tr>
                       <tr>
                         <td><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22" height="22" viewBox="0 0 48 48"  style="margin-bottom: -8px;">
-  <image href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAACFklEQVRYhe2YvW7TUBSAv2M7NF1SlQnRiLUVLAiBWqtG5AVo0ycBoorSrQMo0MEV3dh4hKZPkEoOqSokNrrzN0LbpaA6OeiSRGLBduKLmiGfZMmS7XO/e8+5vteWpTBQxghnnGQM3uDksBbJZYoMMjV2IzQRSmN8i3oY/NC/irhVVFe6yIJA2Tyu8AXlGGG/8Iu9aDP68V+F/NCfVnVrCk9RSiD8PTUF5hHmgWo8xc5SeH9biHfatfZ51jYyp2z51fJ1Ve8A4TkYmVRmQF90cd8Fr4MbVoUWdyvlTkGOEL2XNfAAgdtxh5Yf+nNWhEyaJI4bQKaA/6AM7l5lq1LMLdQVZx24k0PmDwp3z0vx41xCZjaJynpemQECz4J6MDuyEDhrGQs4KzPxFVnNIcRDizI9RFeSLicKKc4t2z4KN0cWAr1m2cfUUeJsvYy1rJt0MU3om12X9JjJNaR8tK5DcszkERL2bduI0hhZyKFjHj61JaNwMuV4iZ1MFGrX2t9Btm0JiUi9+aR5MrKQoXjmhgLvLfgcFU/d3bSbUoWaW82f0KlidoOj89m90LVerJxC9FL31b3QRdPL4ZX0g+cStDZamV4hmV+MJmDxzHugsJml0E0BI7Ix65X86FH0KWs7Q+2p+0P+MqgHb8yqreiqCAv0N/n9tB6DNqal0Egr4NxCA/pfE2/7h1UmH4ppTITSmPxBSwT4DSSSm+a3NIEbAAAAAElFTkSuQmCC"/>
+  <image  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAACFklEQVRYhe2YvW7TUBSAv2M7NF1SlQnRiLUVLAiBWqtG5AVo0ycBoorSrQMo0MEV3dh4hKZPkEoOqSokNrrzN0LbpaA6OeiSRGLBduKLmiGfZMmS7XO/e8+5vteWpTBQxghnnGQM3uDksBbJZYoMMjV2IzQRSmN8i3oY/NC/irhVVFe6yIJA2Tyu8AXlGGG/8Iu9aDP68V+F/NCfVnVrCk9RSiD8PTUF5hHmgWo8xc5SeH9biHfatfZ51jYyp2z51fJ1Ve8A4TkYmVRmQF90cd8Fr4MbVoUWdyvlTkGOEL2XNfAAgdtxh5Yf+nNWhEyaJI4bQKaA/6AM7l5lq1LMLdQVZx24k0PmDwp3z0vx41xCZjaJynpemQECz4J6MDuyEDhrGQs4KzPxFVnNIcRDizI9RFeSLicKKc4t2z4KN0cWAr1m2cfUUeJsvYy1rJt0MU3om12X9JjJNaR8tK5DcszkERL2bduI0hhZyKFjHj61JaNwMuV4iZ1MFGrX2t9Btm0JiUi9+aR5MrKQoXjmhgLvLfgcFU/d3bSbUoWaW82f0KlidoOj89m90LVerJxC9FL31b3QRdPL4ZX0g+cStDZamV4hmV+MJmDxzHugsJml0E0BI7Ix65X86FH0KWs7Q+2p+0P+MqgHb8yqreiqCAv0N/n9tB6DNqal0Egr4NxCA/pfE2/7h1UmH4ppTITSmPxBSwT4DSSSm+a3NIEbAAAAAElFTkSuQmCC"/>
 </svg>Capsicum & Onion Pizza</td>
                         <td>₹120</td>
                       </tr>
                       <tr>
                         <td><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22" height="22" viewBox="0 0 48 48"  style="margin-bottom: -8px;">
-  <image  href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAACFklEQVRYhe2YvW7TUBSAv2M7NF1SlQnRiLUVLAiBWqtG5AVo0ycBoorSrQMo0MEV3dh4hKZPkEoOqSokNrrzN0LbpaA6OeiSRGLBduKLmiGfZMmS7XO/e8+5vteWpTBQxghnnGQM3uDksBbJZYoMMjV2IzQRSmN8i3oY/NC/irhVVFe6yIJA2Tyu8AXlGGG/8Iu9aDP68V+F/NCfVnVrCk9RSiD8PTUF5hHmgWo8xc5SeH9biHfatfZ51jYyp2z51fJ1Ve8A4TkYmVRmQF90cd8Fr4MbVoUWdyvlTkGOEL2XNfAAgdtxh5Yf+nNWhEyaJI4bQKaA/6AM7l5lq1LMLdQVZx24k0PmDwp3z0vx41xCZjaJynpemQECz4J6MDuyEDhrGQs4KzPxFVnNIcRDizI9RFeSLicKKc4t2z4KN0cWAr1m2cfUUeJsvYy1rJt0MU3om12X9JjJNaR8tK5DcszkERL2bduI0hhZyKFjHj61JaNwMuV4iZ1MFGrX2t9Btm0JiUi9+aR5MrKQoXjmhgLvLfgcFU/d3bSbUoWaW82f0KlidoOj89m90LVerJxC9FL31b3QRdPL4ZX0g+cStDZamV4hmV+MJmDxzHugsJml0E0BI7Ix65X86FH0KWs7Q+2p+0P+MqgHb8yqreiqCAv0N/n9tB6DNqal0Egr4NxCA/pfE2/7h1UmH4ppTITSmPxBSwT4DSSSm+a3NIEbAAAAAElFTkSuQmCC"/>
+  <image  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAACFklEQVRYhe2YvW7TUBSAv2M7NF1SlQnRiLUVLAiBWqtG5AVo0ycBoorSrQMo0MEV3dh4hKZPkEoOqSokNrrzN0LbpaA6OeiSRGLBduKLmiGfZMmS7XO/e8+5vteWpTBQxghnnGQM3uDksBbJZYoMMjV2IzQRSmN8i3oY/NC/irhVVFe6yIJA2Tyu8AXlGGG/8Iu9aDP68V+F/NCfVnVrCk9RSiD8PTUF5hHmgWo8xc5SeH9biHfatfZ51jYyp2z51fJ1Ve8A4TkYmVRmQF90cd8Fr4MbVoUWdyvlTkGOEL2XNfAAgdtxh5Yf+nNWhEyaJI4bQKaA/6AM7l5lq1LMLdQVZx24k0PmDwp3z0vx41xCZjaJynpemQECz4J6MDuyEDhrGQs4KzPxFVnNIcRDizI9RFeSLicKKc4t2z4KN0cWAr1m2cfUUeJsvYy1rJt0MU3om12X9JjJNaR8tK5DcszkERL2bduI0hhZyKFjHj61JaNwMuV4iZ1MFGrX2t9Btm0JiUi9+aR5MrKQoXjmhgLvLfgcFU/d3bSbUoWaW82f0KlidoOj89m90LVerJxC9FL31b3QRdPL4ZX0g+cStDZamV4hmV+MJmDxzHugsJml0E0BI7Ix65X86FH0KWs7Q+2p+0P+MqgHb8yqreiqCAv0N/n9tB6DNqal0Egr4NxCA/pfE2/7h1UmH4ppTITSmPxBSwT4DSSSm+a3NIEbAAAAAElFTkSuQmCC"/>
 </svg>Capsicum & Tomato Pizza</td>
                         <td>₹120</td>
                       </tr>
                         <tr>
                         <td><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22" height="22" viewBox="0 0 48 48"  style="margin-bottom: -8px;">
-  <image  href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAACFklEQVRYhe2YvW7TUBSAv2M7NF1SlQnRiLUVLAiBWqtG5AVo0ycBoorSrQMo0MEV3dh4hKZPkEoOqSokNrrzN0LbpaA6OeiSRGLBduKLmiGfZMmS7XO/e8+5vteWpTBQxghnnGQM3uDksBbJZYoMMjV2IzQRSmN8i3oY/NC/irhVVFe6yIJA2Tyu8AXlGGG/8Iu9aDP68V+F/NCfVnVrCk9RSiD8PTUF5hHmgWo8xc5SeH9biHfatfZ51jYyp2z51fJ1Ve8A4TkYmVRmQF90cd8Fr4MbVoUWdyvlTkGOEL2XNfAAgdtxh5Yf+nNWhEyaJI4bQKaA/6AM7l5lq1LMLdQVZx24k0PmDwp3z0vx41xCZjaJynpemQECz4J6MDuyEDhrGQs4KzPxFVnNIcRDizI9RFeSLicKKc4t2z4KN0cWAr1m2cfUUeJsvYy1rJt0MU3om12X9JjJNaR8tK5DcszkERL2bduI0hhZyKFjHj61JaNwMuV4iZ1MFGrX2t9Btm0JiUi9+aR5MrKQoXjmhgLvLfgcFU/d3bSbUoWaW82f0KlidoOj89m90LVerJxC9FL31b3QRdPL4ZX0g+cStDZamV4hmV+MJmDxzHugsJml0E0BI7Ix65X86FH0KWs7Q+2p+0P+MqgHb8yqreiqCAv0N/n9tB6DNqal0Egr4NxCA/pfE2/7h1UmH4ppTITSmPxBSwT4DSSSm+a3NIEbAAAAAElFTkSuQmCC"/>
+  <image  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAACFklEQVRYhe2YvW7TUBSAv2M7NF1SlQnRiLUVLAiBWqtG5AVo0ycBoorSrQMo0MEV3dh4hKZPkEoOqSokNrrzN0LbpaA6OeiSRGLBduKLmiGfZMmS7XO/e8+5vteWpTBQxghnnGQM3uDksBbJZYoMMjV2IzQRSmN8i3oY/NC/irhVVFe6yIJA2Tyu8AXlGGG/8Iu9aDP68V+F/NCfVnVrCk9RSiD8PTUF5hHmgWo8xc5SeH9biHfatfZ51jYyp2z51fJ1Ve8A4TkYmVRmQF90cd8Fr4MbVoUWdyvlTkGOEL2XNfAAgdtxh5Yf+nNWhEyaJI4bQKaA/6AM7l5lq1LMLdQVZx24k0PmDwp3z0vx41xCZjaJynpemQECz4J6MDuyEDhrGQs4KzPxFVnNIcRDizI9RFeSLicKKc4t2z4KN0cWAr1m2cfUUeJsvYy1rJt0MU3om12X9JjJNaR8tK5DcszkERL2bduI0hhZyKFjHj61JaNwMuV4iZ1MFGrX2t9Btm0JiUi9+aR5MrKQoXjmhgLvLfgcFU/d3bSbUoWaW82f0KlidoOj89m90LVerJxC9FL31b3QRdPL4ZX0g+cStDZamV4hmV+MJmDxzHugsJml0E0BI7Ix65X86FH0KWs7Q+2p+0P+MqgHb8yqreiqCAv0N/n9tB6DNqal0Egr4NxCA/pfE2/7h1UmH4ppTITSmPxBSwT4DSSSm+a3NIEbAAAAAElFTkSuQmCC"/>
 </svg>Capsicum & Jalapeno Pizza</td>
                         <td>₹120</td>
                       </tr>
@@ -216,7 +218,7 @@
                 </div>
               </div>
               <div class="row">
-                <div class="col-sm-12 col-md-6">
+                <div class="col-sm-12 order-2 order-md-1 col-md-6 we">
                   <table class="table table-borderless textw pad5">
                     <tbody>
                       
@@ -226,7 +228,7 @@
                         <td >
                         	
                         	<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22" height="22" viewBox="0 0 48 48"  style="margin-bottom: -8px;">
-  <image  href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAACFklEQVRYhe2YvW7TUBSAv2M7NF1SlQnRiLUVLAiBWqtG5AVo0ycBoorSrQMo0MEV3dh4hKZPkEoOqSokNrrzN0LbpaA6OeiSRGLBduKLmiGfZMmS7XO/e8+5vteWpTBQxghnnGQM3uDksBbJZYoMMjV2IzQRSmN8i3oY/NC/irhVVFe6yIJA2Tyu8AXlGGG/8Iu9aDP68V+F/NCfVnVrCk9RSiD8PTUF5hHmgWo8xc5SeH9biHfatfZ51jYyp2z51fJ1Ve8A4TkYmVRmQF90cd8Fr4MbVoUWdyvlTkGOEL2XNfAAgdtxh5Yf+nNWhEyaJI4bQKaA/6AM7l5lq1LMLdQVZx24k0PmDwp3z0vx41xCZjaJynpemQECz4J6MDuyEDhrGQs4KzPxFVnNIcRDizI9RFeSLicKKc4t2z4KN0cWAr1m2cfUUeJsvYy1rJt0MU3om12X9JjJNaR8tK5DcszkERL2bduI0hhZyKFjHj61JaNwMuV4iZ1MFGrX2t9Btm0JiUi9+aR5MrKQoXjmhgLvLfgcFU/d3bSbUoWaW82f0KlidoOj89m90LVerJxC9FL31b3QRdPL4ZX0g+cStDZamV4hmV+MJmDxzHugsJml0E0BI7Ix65X86FH0KWs7Q+2p+0P+MqgHb8yqreiqCAv0N/n9tB6DNqal0Egr4NxCA/pfE2/7h1UmH4ppTITSmPxBSwT4DSSSm+a3NIEbAAAAAElFTkSuQmCC"/>
+  <image  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAACFklEQVRYhe2YvW7TUBSAv2M7NF1SlQnRiLUVLAiBWqtG5AVo0ycBoorSrQMo0MEV3dh4hKZPkEoOqSokNrrzN0LbpaA6OeiSRGLBduKLmiGfZMmS7XO/e8+5vteWpTBQxghnnGQM3uDksBbJZYoMMjV2IzQRSmN8i3oY/NC/irhVVFe6yIJA2Tyu8AXlGGG/8Iu9aDP68V+F/NCfVnVrCk9RSiD8PTUF5hHmgWo8xc5SeH9biHfatfZ51jYyp2z51fJ1Ve8A4TkYmVRmQF90cd8Fr4MbVoUWdyvlTkGOEL2XNfAAgdtxh5Yf+nNWhEyaJI4bQKaA/6AM7l5lq1LMLdQVZx24k0PmDwp3z0vx41xCZjaJynpemQECz4J6MDuyEDhrGQs4KzPxFVnNIcRDizI9RFeSLicKKc4t2z4KN0cWAr1m2cfUUeJsvYy1rJt0MU3om12X9JjJNaR8tK5DcszkERL2bduI0hhZyKFjHj61JaNwMuV4iZ1MFGrX2t9Btm0JiUi9+aR5MrKQoXjmhgLvLfgcFU/d3bSbUoWaW82f0KlidoOj89m90LVerJxC9FL31b3QRdPL4ZX0g+cStDZamV4hmV+MJmDxzHugsJml0E0BI7Ix65X86FH0KWs7Q+2p+0P+MqgHb8yqreiqCAv0N/n9tB6DNqal0Egr4NxCA/pfE2/7h1UmH4ppTITSmPxBSwT4DSSSm+a3NIEbAAAAAElFTkSuQmCC"/>
 </svg>
 Capsicum & corn Pizza</td>
                         <td>₹120</td>
@@ -234,38 +236,38 @@ Capsicum & corn Pizza</td>
 
                        <tr>
                         <td><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22" height="22" viewBox="0 0 48 48"  style="margin-bottom: -8px;">
-  <image  href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAACFklEQVRYhe2YvW7TUBSAv2M7NF1SlQnRiLUVLAiBWqtG5AVo0ycBoorSrQMo0MEV3dh4hKZPkEoOqSokNrrzN0LbpaA6OeiSRGLBduKLmiGfZMmS7XO/e8+5vteWpTBQxghnnGQM3uDksBbJZYoMMjV2IzQRSmN8i3oY/NC/irhVVFe6yIJA2Tyu8AXlGGG/8Iu9aDP68V+F/NCfVnVrCk9RSiD8PTUF5hHmgWo8xc5SeH9biHfatfZ51jYyp2z51fJ1Ve8A4TkYmVRmQF90cd8Fr4MbVoUWdyvlTkGOEL2XNfAAgdtxh5Yf+nNWhEyaJI4bQKaA/6AM7l5lq1LMLdQVZx24k0PmDwp3z0vx41xCZjaJynpemQECz4J6MDuyEDhrGQs4KzPxFVnNIcRDizI9RFeSLicKKc4t2z4KN0cWAr1m2cfUUeJsvYy1rJt0MU3om12X9JjJNaR8tK5DcszkERL2bduI0hhZyKFjHj61JaNwMuV4iZ1MFGrX2t9Btm0JiUi9+aR5MrKQoXjmhgLvLfgcFU/d3bSbUoWaW82f0KlidoOj89m90LVerJxC9FL31b3QRdPL4ZX0g+cStDZamV4hmV+MJmDxzHugsJml0E0BI7Ix65X86FH0KWs7Q+2p+0P+MqgHb8yqreiqCAv0N/n9tB6DNqal0Egr4NxCA/pfE2/7h1UmH4ppTITSmPxBSwT4DSSSm+a3NIEbAAAAAElFTkSuQmCC"/>
+  <image  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAACFklEQVRYhe2YvW7TUBSAv2M7NF1SlQnRiLUVLAiBWqtG5AVo0ycBoorSrQMo0MEV3dh4hKZPkEoOqSokNrrzN0LbpaA6OeiSRGLBduKLmiGfZMmS7XO/e8+5vteWpTBQxghnnGQM3uDksBbJZYoMMjV2IzQRSmN8i3oY/NC/irhVVFe6yIJA2Tyu8AXlGGG/8Iu9aDP68V+F/NCfVnVrCk9RSiD8PTUF5hHmgWo8xc5SeH9biHfatfZ51jYyp2z51fJ1Ve8A4TkYmVRmQF90cd8Fr4MbVoUWdyvlTkGOEL2XNfAAgdtxh5Yf+nNWhEyaJI4bQKaA/6AM7l5lq1LMLdQVZx24k0PmDwp3z0vx41xCZjaJynpemQECz4J6MDuyEDhrGQs4KzPxFVnNIcRDizI9RFeSLicKKc4t2z4KN0cWAr1m2cfUUeJsvYy1rJt0MU3om12X9JjJNaR8tK5DcszkERL2bduI0hhZyKFjHj61JaNwMuV4iZ1MFGrX2t9Btm0JiUi9+aR5MrKQoXjmhgLvLfgcFU/d3bSbUoWaW82f0KlidoOj89m90LVerJxC9FL31b3QRdPL4ZX0g+cStDZamV4hmV+MJmDxzHugsJml0E0BI7Ix65X86FH0KWs7Q+2p+0P+MqgHb8yqreiqCAv0N/n9tB6DNqal0Egr4NxCA/pfE2/7h1UmH4ppTITSmPxBSwT4DSSSm+a3NIEbAAAAAElFTkSuQmCC"/>
 </svg>Mushroom & capsicum Pizza</td>
                         <td>₹120</td>
                       </tr>
                       <tr>
                         <td><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22" height="22" viewBox="0 0 48 48"  style="margin-bottom: -8px;">
-  <image  href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAACFklEQVRYhe2YvW7TUBSAv2M7NF1SlQnRiLUVLAiBWqtG5AVo0ycBoorSrQMo0MEV3dh4hKZPkEoOqSokNrrzN0LbpaA6OeiSRGLBduKLmiGfZMmS7XO/e8+5vteWpTBQxghnnGQM3uDksBbJZYoMMjV2IzQRSmN8i3oY/NC/irhVVFe6yIJA2Tyu8AXlGGG/8Iu9aDP68V+F/NCfVnVrCk9RSiD8PTUF5hHmgWo8xc5SeH9biHfatfZ51jYyp2z51fJ1Ve8A4TkYmVRmQF90cd8Fr4MbVoUWdyvlTkGOEL2XNfAAgdtxh5Yf+nNWhEyaJI4bQKaA/6AM7l5lq1LMLdQVZx24k0PmDwp3z0vx41xCZjaJynpemQECz4J6MDuyEDhrGQs4KzPxFVnNIcRDizI9RFeSLicKKc4t2z4KN0cWAr1m2cfUUeJsvYy1rJt0MU3om12X9JjJNaR8tK5DcszkERL2bduI0hhZyKFjHj61JaNwMuV4iZ1MFGrX2t9Btm0JiUi9+aR5MrKQoXjmhgLvLfgcFU/d3bSbUoWaW82f0KlidoOj89m90LVerJxC9FL31b3QRdPL4ZX0g+cStDZamV4hmV+MJmDxzHugsJml0E0BI7Ix65X86FH0KWs7Q+2p+0P+MqgHb8yqreiqCAv0N/n9tB6DNqal0Egr4NxCA/pfE2/7h1UmH4ppTITSmPxBSwT4DSSSm+a3NIEbAAAAAElFTkSuQmCC"/>
+  <image  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAACFklEQVRYhe2YvW7TUBSAv2M7NF1SlQnRiLUVLAiBWqtG5AVo0ycBoorSrQMo0MEV3dh4hKZPkEoOqSokNrrzN0LbpaA6OeiSRGLBduKLmiGfZMmS7XO/e8+5vteWpTBQxghnnGQM3uDksBbJZYoMMjV2IzQRSmN8i3oY/NC/irhVVFe6yIJA2Tyu8AXlGGG/8Iu9aDP68V+F/NCfVnVrCk9RSiD8PTUF5hHmgWo8xc5SeH9biHfatfZ51jYyp2z51fJ1Ve8A4TkYmVRmQF90cd8Fr4MbVoUWdyvlTkGOEL2XNfAAgdtxh5Yf+nNWhEyaJI4bQKaA/6AM7l5lq1LMLdQVZx24k0PmDwp3z0vx41xCZjaJynpemQECz4J6MDuyEDhrGQs4KzPxFVnNIcRDizI9RFeSLicKKc4t2z4KN0cWAr1m2cfUUeJsvYy1rJt0MU3om12X9JjJNaR8tK5DcszkERL2bduI0hhZyKFjHj61JaNwMuV4iZ1MFGrX2t9Btm0JiUi9+aR5MrKQoXjmhgLvLfgcFU/d3bSbUoWaW82f0KlidoOj89m90LVerJxC9FL31b3QRdPL4ZX0g+cStDZamV4hmV+MJmDxzHugsJml0E0BI7Ix65X86FH0KWs7Q+2p+0P+MqgHb8yqreiqCAv0N/n9tB6DNqal0Egr4NxCA/pfE2/7h1UmH4ppTITSmPxBSwT4DSSSm+a3NIEbAAAAAElFTkSuQmCC"/>
 </svg>Corn & Onion Pizza</td>
                         <td>₹120</td>
                       </tr>
                       <tr>
                         <td><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22" height="22" viewBox="0 0 48 48"  style="margin-bottom: -8px;">
-  <image href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAACFklEQVRYhe2YvW7TUBSAv2M7NF1SlQnRiLUVLAiBWqtG5AVo0ycBoorSrQMo0MEV3dh4hKZPkEoOqSokNrrzN0LbpaA6OeiSRGLBduKLmiGfZMmS7XO/e8+5vteWpTBQxghnnGQM3uDksBbJZYoMMjV2IzQRSmN8i3oY/NC/irhVVFe6yIJA2Tyu8AXlGGG/8Iu9aDP68V+F/NCfVnVrCk9RSiD8PTUF5hHmgWo8xc5SeH9biHfatfZ51jYyp2z51fJ1Ve8A4TkYmVRmQF90cd8Fr4MbVoUWdyvlTkGOEL2XNfAAgdtxh5Yf+nNWhEyaJI4bQKaA/6AM7l5lq1LMLdQVZx24k0PmDwp3z0vx41xCZjaJynpemQECz4J6MDuyEDhrGQs4KzPxFVnNIcRDizI9RFeSLicKKc4t2z4KN0cWAr1m2cfUUeJsvYy1rJt0MU3om12X9JjJNaR8tK5DcszkERL2bduI0hhZyKFjHj61JaNwMuV4iZ1MFGrX2t9Btm0JiUi9+aR5MrKQoXjmhgLvLfgcFU/d3bSbUoWaW82f0KlidoOj89m90LVerJxC9FL31b3QRdPL4ZX0g+cStDZamV4hmV+MJmDxzHugsJml0E0BI7Ix65X86FH0KWs7Q+2p+0P+MqgHb8yqreiqCAv0N/n9tB6DNqal0Egr4NxCA/pfE2/7h1UmH4ppTITSmPxBSwT4DSSSm+a3NIEbAAAAAElFTkSuQmCC"/>
+  <image  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAACFklEQVRYhe2YvW7TUBSAv2M7NF1SlQnRiLUVLAiBWqtG5AVo0ycBoorSrQMo0MEV3dh4hKZPkEoOqSokNrrzN0LbpaA6OeiSRGLBduKLmiGfZMmS7XO/e8+5vteWpTBQxghnnGQM3uDksBbJZYoMMjV2IzQRSmN8i3oY/NC/irhVVFe6yIJA2Tyu8AXlGGG/8Iu9aDP68V+F/NCfVnVrCk9RSiD8PTUF5hHmgWo8xc5SeH9biHfatfZ51jYyp2z51fJ1Ve8A4TkYmVRmQF90cd8Fr4MbVoUWdyvlTkGOEL2XNfAAgdtxh5Yf+nNWhEyaJI4bQKaA/6AM7l5lq1LMLdQVZx24k0PmDwp3z0vx41xCZjaJynpemQECz4J6MDuyEDhrGQs4KzPxFVnNIcRDizI9RFeSLicKKc4t2z4KN0cWAr1m2cfUUeJsvYy1rJt0MU3om12X9JjJNaR8tK5DcszkERL2bduI0hhZyKFjHj61JaNwMuV4iZ1MFGrX2t9Btm0JiUi9+aR5MrKQoXjmhgLvLfgcFU/d3bSbUoWaW82f0KlidoOj89m90LVerJxC9FL31b3QRdPL4ZX0g+cStDZamV4hmV+MJmDxzHugsJml0E0BI7Ix65X86FH0KWs7Q+2p+0P+MqgHb8yqreiqCAv0N/n9tB6DNqal0Egr4NxCA/pfE2/7h1UmH4ppTITSmPxBSwT4DSSSm+a3NIEbAAAAAElFTkSuQmCC"/>
 </svg>Corn & Tomato Pizza</td>
                         <td>₹120</td>
                       </tr>
                       <tr>
                         <td><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22" height="22" viewBox="0 0 48 48"  style="margin-bottom: -8px;">
-  <image  href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAACFklEQVRYhe2YvW7TUBSAv2M7NF1SlQnRiLUVLAiBWqtG5AVo0ycBoorSrQMo0MEV3dh4hKZPkEoOqSokNrrzN0LbpaA6OeiSRGLBduKLmiGfZMmS7XO/e8+5vteWpTBQxghnnGQM3uDksBbJZYoMMjV2IzQRSmN8i3oY/NC/irhVVFe6yIJA2Tyu8AXlGGG/8Iu9aDP68V+F/NCfVnVrCk9RSiD8PTUF5hHmgWo8xc5SeH9biHfatfZ51jYyp2z51fJ1Ve8A4TkYmVRmQF90cd8Fr4MbVoUWdyvlTkGOEL2XNfAAgdtxh5Yf+nNWhEyaJI4bQKaA/6AM7l5lq1LMLdQVZx24k0PmDwp3z0vx41xCZjaJynpemQECz4J6MDuyEDhrGQs4KzPxFVnNIcRDizI9RFeSLicKKc4t2z4KN0cWAr1m2cfUUeJsvYy1rJt0MU3om12X9JjJNaR8tK5DcszkERL2bduI0hhZyKFjHj61JaNwMuV4iZ1MFGrX2t9Btm0JiUi9+aR5MrKQoXjmhgLvLfgcFU/d3bSbUoWaW82f0KlidoOj89m90LVerJxC9FL31b3QRdPL4ZX0g+cStDZamV4hmV+MJmDxzHugsJml0E0BI7Ix65X86FH0KWs7Q+2p+0P+MqgHb8yqreiqCAv0N/n9tB6DNqal0Egr4NxCA/pfE2/7h1UmH4ppTITSmPxBSwT4DSSSm+a3NIEbAAAAAElFTkSuQmCC"/>
+  <image  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAACFklEQVRYhe2YvW7TUBSAv2M7NF1SlQnRiLUVLAiBWqtG5AVo0ycBoorSrQMo0MEV3dh4hKZPkEoOqSokNrrzN0LbpaA6OeiSRGLBduKLmiGfZMmS7XO/e8+5vteWpTBQxghnnGQM3uDksBbJZYoMMjV2IzQRSmN8i3oY/NC/irhVVFe6yIJA2Tyu8AXlGGG/8Iu9aDP68V+F/NCfVnVrCk9RSiD8PTUF5hHmgWo8xc5SeH9biHfatfZ51jYyp2z51fJ1Ve8A4TkYmVRmQF90cd8Fr4MbVoUWdyvlTkGOEL2XNfAAgdtxh5Yf+nNWhEyaJI4bQKaA/6AM7l5lq1LMLdQVZx24k0PmDwp3z0vx41xCZjaJynpemQECz4J6MDuyEDhrGQs4KzPxFVnNIcRDizI9RFeSLicKKc4t2z4KN0cWAr1m2cfUUeJsvYy1rJt0MU3om12X9JjJNaR8tK5DcszkERL2bduI0hhZyKFjHj61JaNwMuV4iZ1MFGrX2t9Btm0JiUi9+aR5MrKQoXjmhgLvLfgcFU/d3bSbUoWaW82f0KlidoOj89m90LVerJxC9FL31b3QRdPL4ZX0g+cStDZamV4hmV+MJmDxzHugsJml0E0BI7Ix65X86FH0KWs7Q+2p+0P+MqgHb8yqreiqCAv0N/n9tB6DNqal0Egr4NxCA/pfE2/7h1UmH4ppTITSmPxBSwT4DSSSm+a3NIEbAAAAAElFTkSuQmCC"/>
 </svg>Corn & Jalapeno Pizza</td>
                         <td>₹120</td>
                       </tr>
 <tr>
                         <td><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22" height="22" viewBox="0 0 48 48" style="margin-bottom: -8px;">
-  <image  href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAACIUlEQVRYhe2YT2sTQRiHf+9sbSrWpK0VpN2E3lr0IqKIIPgJbNNvIqWoBZGlVCI9tODNmx+h8Rt40EMRvNlraNacUpuqwdSy+5PdJOLF2cnuSHPIAwvLzs47z87/WdkszhJDhBommYix/s3zelPOU6TfUkNXQyOhJIa3Uw+C5+ZnlOTKAJchWALhxtkFPogDQt6Oy6+9jcOT4/8qtOO6F9tyukbwMcB8/PDvWYxYBLAoYPmMF3Y3i1e3J5nbXfP9n6ZlGDeZV5yd+yGddwS3AOQNshQAvmirzgdvbrpkVcibn3EVsA/gjmngPiRuKsd5v+VembciFDWTo1QVgFHAf+AGInvewsJEZqG2dNYJ3MogEyPAbRV+f5RJKBpNBNazyvyB8rRSKkynFhLkVg07sCmFM46vpBcSPrQo02c5tRCAG9Z1hNd1yUlC1+zaxJOndrSex1oW6hKThBp2XeIa0sZMEvps1yYeKdqYWqFo1bYvFFbTC/E0ynxiUacVqkD7kfqZ2v/2FZBtazpkxau1WqmFIkLn0g6Bj5ldgP1w7PKrpPcShbxareOQZQB+Bp86gdUoVmahiGf+0ZcQuMvunmgwiE9hENz36k2jKcR8x1hvNuhMPoBww7Cjt0A+mZqYuuc1jg9NyxloT92r8peVUuF1d9XmCoglSG+TT/gQOaCEVaqg2u3AR4MUke7U0TtNvOldVhkdFJMYCSUx+oOmBcBvsLCyTcFG+/sAAAAASUVORK5CYII="/>
+  <image  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAACIUlEQVRYhe2YT2sTQRiHf+9sbSrWpK0VpN2E3lr0IqKIIPgJbNNvIqWoBZGlVCI9tODNmx+h8Rt40EMRvNlraNacUpuqwdSy+5PdJOLF2cnuSHPIAwvLzs47z87/WdkszhJDhBommYix/s3zelPOU6TfUkNXQyOhJIa3Uw+C5+ZnlOTKAJchWALhxtkFPogDQt6Oy6+9jcOT4/8qtOO6F9tyukbwMcB8/PDvWYxYBLAoYPmMF3Y3i1e3J5nbXfP9n6ZlGDeZV5yd+yGddwS3AOQNshQAvmirzgdvbrpkVcibn3EVsA/gjmngPiRuKsd5v+VembciFDWTo1QVgFHAf+AGInvewsJEZqG2dNYJ3MogEyPAbRV+f5RJKBpNBNazyvyB8rRSKkynFhLkVg07sCmFM46vpBcSPrQo02c5tRCAG9Z1hNd1yUlC1+zaxJOndrSex1oW6hKThBp2XeIa0sZMEvps1yYeKdqYWqFo1bYvFFbTC/E0ynxiUacVqkD7kfqZ2v/2FZBtazpkxau1WqmFIkLn0g6Bj5ldgP1w7PKrpPcShbxareOQZQB+Bp86gdUoVmahiGf+0ZcQuMvunmgwiE9hENz36k2jKcR8x1hvNuhMPoBww7Cjt0A+mZqYuuc1jg9NyxloT92r8peVUuF1d9XmCoglSG+TT/gQOaCEVaqg2u3AR4MUke7U0TtNvOldVhkdFJMYCSUx+oOmBcBvsLCyTcFG+/sAAAAASUVORK5CYII="/>
 </svg>
 Chicken & Corn Pizza</td>
                         <td>₹150</td>
                       </tr>
                       <tr>
                         <td><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22" height="22" viewBox="0 0 48 48" style="margin-bottom: -8px;">
-  <image href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAACIUlEQVRYhe2YT2sTQRiHf+9sbSrWpK0VpN2E3lr0IqKIIPgJbNNvIqWoBZGlVCI9tODNmx+h8Rt40EMRvNlraNacUpuqwdSy+5PdJOLF2cnuSHPIAwvLzs47z87/WdkszhJDhBommYix/s3zelPOU6TfUkNXQyOhJIa3Uw+C5+ZnlOTKAJchWALhxtkFPogDQt6Oy6+9jcOT4/8qtOO6F9tyukbwMcB8/PDvWYxYBLAoYPmMF3Y3i1e3J5nbXfP9n6ZlGDeZV5yd+yGddwS3AOQNshQAvmirzgdvbrpkVcibn3EVsA/gjmngPiRuKsd5v+VembciFDWTo1QVgFHAf+AGInvewsJEZqG2dNYJ3MogEyPAbRV+f5RJKBpNBNazyvyB8rRSKkynFhLkVg07sCmFM46vpBcSPrQo02c5tRCAG9Z1hNd1yUlC1+zaxJOndrSex1oW6hKThBp2XeIa0sZMEvps1yYeKdqYWqFo1bYvFFbTC/E0ynxiUacVqkD7kfqZ2v/2FZBtazpkxau1WqmFIkLn0g6Bj5ldgP1w7PKrpPcShbxareOQZQB+Bp86gdUoVmahiGf+0ZcQuMvunmgwiE9hENz36k2jKcR8x1hvNuhMPoBww7Cjt0A+mZqYuuc1jg9NyxloT92r8peVUuF1d9XmCoglSG+TT/gQOaCEVaqg2u3AR4MUke7U0TtNvOldVhkdFJMYCSUx+oOmBcBvsLCyTcFG+/sAAAAASUVORK5CYII="/>
+  <image  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAACIUlEQVRYhe2YT2sTQRiHf+9sbSrWpK0VpN2E3lr0IqKIIPgJbNNvIqWoBZGlVCI9tODNmx+h8Rt40EMRvNlraNacUpuqwdSy+5PdJOLF2cnuSHPIAwvLzs47z87/WdkszhJDhBommYix/s3zelPOU6TfUkNXQyOhJIa3Uw+C5+ZnlOTKAJchWALhxtkFPogDQt6Oy6+9jcOT4/8qtOO6F9tyukbwMcB8/PDvWYxYBLAoYPmMF3Y3i1e3J5nbXfP9n6ZlGDeZV5yd+yGddwS3AOQNshQAvmirzgdvbrpkVcibn3EVsA/gjmngPiRuKsd5v+VembciFDWTo1QVgFHAf+AGInvewsJEZqG2dNYJ3MogEyPAbRV+f5RJKBpNBNazyvyB8rRSKkynFhLkVg07sCmFM46vpBcSPrQo02c5tRCAG9Z1hNd1yUlC1+zaxJOndrSex1oW6hKThBp2XeIa0sZMEvps1yYeKdqYWqFo1bYvFFbTC/E0ynxiUacVqkD7kfqZ2v/2FZBtazpkxau1WqmFIkLn0g6Bj5ldgP1w7PKrpPcShbxareOQZQB+Bp86gdUoVmahiGf+0ZcQuMvunmgwiE9hENz36k2jKcR8x1hvNuhMPoBww7Cjt0A+mZqYuuc1jg9NyxloT92r8peVUuF1d9XmCoglSG+TT/gQOaCEVaqg2u3AR4MUke7U0TtNvOldVhkdFJMYCSUx+oOmBcBvsLCyTcFG+/sAAAAASUVORK5CYII="/>
 </svg>Chicken & Onion Pizza</td>
                         <td>₹150</td>
                       </tr>
@@ -273,94 +275,78 @@ Chicken & Corn Pizza</td>
                     </tbody>
                   </table>
                 </div>
-                <div class="col-sm-12 col-md-6">
+                <div class="col-sm-12 order-1 order-md-2 col-md-6">
                   <img src="assets\img\backpizza.jpg" class="img-fluid minpic">
                 </div>
               </div>
-
-              <div class="row">
-                <div class="col-sm-12 col-md-6">
-                  <img src="assets\img\pizza.jpg" class="img-fluid minpic">
+              <div class="row" style="">
+                <div class="col-sm-12 col-md-6" style="">
+                  <img src="assets\img\pizza.jpg" class="img-fluid minpic" style="">
                 </div>
-                <div class="col-sm-12 col-md-6">
-                  <table class="table textw pad5">
+                <div class="col-sm-12 col-md-6 we" style="">
+                  <table class="table textw">
                     <tbody>
                      
                       <tr>
                         <td><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22" height="22" viewBox="0 0 48 48" style="margin-bottom: -8px;">
-  <image  href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAACIUlEQVRYhe2YT2sTQRiHf+9sbSrWpK0VpN2E3lr0IqKIIPgJbNNvIqWoBZGlVCI9tODNmx+h8Rt40EMRvNlraNacUpuqwdSy+5PdJOLF2cnuSHPIAwvLzs47z87/WdkszhJDhBommYix/s3zelPOU6TfUkNXQyOhJIa3Uw+C5+ZnlOTKAJchWALhxtkFPogDQt6Oy6+9jcOT4/8qtOO6F9tyukbwMcB8/PDvWYxYBLAoYPmMF3Y3i1e3J5nbXfP9n6ZlGDeZV5yd+yGddwS3AOQNshQAvmirzgdvbrpkVcibn3EVsA/gjmngPiRuKsd5v+VembciFDWTo1QVgFHAf+AGInvewsJEZqG2dNYJ3MogEyPAbRV+f5RJKBpNBNazyvyB8rRSKkynFhLkVg07sCmFM46vpBcSPrQo02c5tRCAG9Z1hNd1yUlC1+zaxJOndrSex1oW6hKThBp2XeIa0sZMEvps1yYeKdqYWqFo1bYvFFbTC/E0ynxiUacVqkD7kfqZ2v/2FZBtazpkxau1WqmFIkLn0g6Bj5ldgP1w7PKrpPcShbxareOQZQB+Bp86gdUoVmahiGf+0ZcQuMvunmgwiE9hENz36k2jKcR8x1hvNuhMPoBww7Cjt0A+mZqYuuc1jg9NyxloT92r8peVUuF1d9XmCoglSG+TT/gQOaCEVaqg2u3AR4MUke7U0TtNvOldVhkdFJMYCSUx+oOmBcBvsLCyTcFG+/sAAAAASUVORK5CYII="/>
+  <image  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAACIUlEQVRYhe2YT2sTQRiHf+9sbSrWpK0VpN2E3lr0IqKIIPgJbNNvIqWoBZGlVCI9tODNmx+h8Rt40EMRvNlraNacUpuqwdSy+5PdJOLF2cnuSHPIAwvLzs47z87/WdkszhJDhBommYix/s3zelPOU6TfUkNXQyOhJIa3Uw+C5+ZnlOTKAJchWALhxtkFPogDQt6Oy6+9jcOT4/8qtOO6F9tyukbwMcB8/PDvWYxYBLAoYPmMF3Y3i1e3J5nbXfP9n6ZlGDeZV5yd+yGddwS3AOQNshQAvmirzgdvbrpkVcibn3EVsA/gjmngPiRuKsd5v+VembciFDWTo1QVgFHAf+AGInvewsJEZqG2dNYJ3MogEyPAbRV+f5RJKBpNBNazyvyB8rRSKkynFhLkVg07sCmFM46vpBcSPrQo02c5tRCAG9Z1hNd1yUlC1+zaxJOndrSex1oW6hKThBp2XeIa0sZMEvps1yYeKdqYWqFo1bYvFFbTC/E0ynxiUacVqkD7kfqZ2v/2FZBtazpkxau1WqmFIkLn0g6Bj5ldgP1w7PKrpPcShbxareOQZQB+Bp86gdUoVmahiGf+0ZcQuMvunmgwiE9hENz36k2jKcR8x1hvNuhMPoBww7Cjt0A+mZqYuuc1jg9NyxloT92r8peVUuF1d9XmCoglSG+TT/gQOaCEVaqg2u3AR4MUke7U0TtNvOldVhkdFJMYCSUx+oOmBcBvsLCyTcFG+/sAAAAASUVORK5CYII="/>
 </svg>Chicken & Olive Pizza</td>
                         <td>₹150</td>
                       </tr>
                       <tr>
                         <td><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22" height="22" viewBox="0 0 48 48" style="margin-bottom: -8px;">
-  <image  href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAACIUlEQVRYhe2YT2sTQRiHf+9sbSrWpK0VpN2E3lr0IqKIIPgJbNNvIqWoBZGlVCI9tODNmx+h8Rt40EMRvNlraNacUpuqwdSy+5PdJOLF2cnuSHPIAwvLzs47z87/WdkszhJDhBommYix/s3zelPOU6TfUkNXQyOhJIa3Uw+C5+ZnlOTKAJchWALhxtkFPogDQt6Oy6+9jcOT4/8qtOO6F9tyukbwMcB8/PDvWYxYBLAoYPmMF3Y3i1e3J5nbXfP9n6ZlGDeZV5yd+yGddwS3AOQNshQAvmirzgdvbrpkVcibn3EVsA/gjmngPiRuKsd5v+VembciFDWTo1QVgFHAf+AGInvewsJEZqG2dNYJ3MogEyPAbRV+f5RJKBpNBNazyvyB8rRSKkynFhLkVg07sCmFM46vpBcSPrQo02c5tRCAG9Z1hNd1yUlC1+zaxJOndrSex1oW6hKThBp2XeIa0sZMEvps1yYeKdqYWqFo1bYvFFbTC/E0ynxiUacVqkD7kfqZ2v/2FZBtazpkxau1WqmFIkLn0g6Bj5ldgP1w7PKrpPcShbxareOQZQB+Bp86gdUoVmahiGf+0ZcQuMvunmgwiE9hENz36k2jKcR8x1hvNuhMPoBww7Cjt0A+mZqYuuc1jg9NyxloT92r8peVUuF1d9XmCoglSG+TT/gQOaCEVaqg2u3AR4MUke7U0TtNvOldVhkdFJMYCSUx+oOmBcBvsLCyTcFG+/sAAAAASUVORK5CYII="/>
+  <image  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAACIUlEQVRYhe2YT2sTQRiHf+9sbSrWpK0VpN2E3lr0IqKIIPgJbNNvIqWoBZGlVCI9tODNmx+h8Rt40EMRvNlraNacUpuqwdSy+5PdJOLF2cnuSHPIAwvLzs47z87/WdkszhJDhBommYix/s3zelPOU6TfUkNXQyOhJIa3Uw+C5+ZnlOTKAJchWALhxtkFPogDQt6Oy6+9jcOT4/8qtOO6F9tyukbwMcB8/PDvWYxYBLAoYPmMF3Y3i1e3J5nbXfP9n6ZlGDeZV5yd+yGddwS3AOQNshQAvmirzgdvbrpkVcibn3EVsA/gjmngPiRuKsd5v+VembciFDWTo1QVgFHAf+AGInvewsJEZqG2dNYJ3MogEyPAbRV+f5RJKBpNBNazyvyB8rRSKkynFhLkVg07sCmFM46vpBcSPrQo02c5tRCAG9Z1hNd1yUlC1+zaxJOndrSex1oW6hKThBp2XeIa0sZMEvps1yYeKdqYWqFo1bYvFFbTC/E0ynxiUacVqkD7kfqZ2v/2FZBtazpkxau1WqmFIkLn0g6Bj5ldgP1w7PKrpPcShbxareOQZQB+Bp86gdUoVmahiGf+0ZcQuMvunmgwiE9hENz36k2jKcR8x1hvNuhMPoBww7Cjt0A+mZqYuuc1jg9NyxloT92r8peVUuF1d9XmCoglSG+TT/gQOaCEVaqg2u3AR4MUke7U0TtNvOldVhkdFJMYCSUx+oOmBcBvsLCyTcFG+/sAAAAASUVORK5CYII="/>
 </svg>Chicken & Jalapeno Pizza</td>
                         <td>₹150</td>
                       </tr>
                       <tr>
                         <td><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22" height="22" viewBox="0 0 48 48" style="margin-bottom: -8px;">
-  <image  href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAACIUlEQVRYhe2YT2sTQRiHf+9sbSrWpK0VpN2E3lr0IqKIIPgJbNNvIqWoBZGlVCI9tODNmx+h8Rt40EMRvNlraNacUpuqwdSy+5PdJOLF2cnuSHPIAwvLzs47z87/WdkszhJDhBommYix/s3zelPOU6TfUkNXQyOhJIa3Uw+C5+ZnlOTKAJchWALhxtkFPogDQt6Oy6+9jcOT4/8qtOO6F9tyukbwMcB8/PDvWYxYBLAoYPmMF3Y3i1e3J5nbXfP9n6ZlGDeZV5yd+yGddwS3AOQNshQAvmirzgdvbrpkVcibn3EVsA/gjmngPiRuKsd5v+VembciFDWTo1QVgFHAf+AGInvewsJEZqG2dNYJ3MogEyPAbRV+f5RJKBpNBNazyvyB8rRSKkynFhLkVg07sCmFM46vpBcSPrQo02c5tRCAG9Z1hNd1yUlC1+zaxJOndrSex1oW6hKThBp2XeIa0sZMEvps1yYeKdqYWqFo1bYvFFbTC/E0ynxiUacVqkD7kfqZ2v/2FZBtazpkxau1WqmFIkLn0g6Bj5ldgP1w7PKrpPcShbxareOQZQB+Bp86gdUoVmahiGf+0ZcQuMvunmgwiE9hENz36k2jKcR8x1hvNuhMPoBww7Cjt0A+mZqYuuc1jg9NyxloT92r8peVUuF1d9XmCoglSG+TT/gQOaCEVaqg2u3AR4MUke7U0TtNvOldVhkdFJMYCSUx+oOmBcBvsLCyTcFG+/sAAAAASUVORK5CYII="/>
+  <image  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAACIUlEQVRYhe2YT2sTQRiHf+9sbSrWpK0VpN2E3lr0IqKIIPgJbNNvIqWoBZGlVCI9tODNmx+h8Rt40EMRvNlraNacUpuqwdSy+5PdJOLF2cnuSHPIAwvLzs47z87/WdkszhJDhBommYix/s3zelPOU6TfUkNXQyOhJIa3Uw+C5+ZnlOTKAJchWALhxtkFPogDQt6Oy6+9jcOT4/8qtOO6F9tyukbwMcB8/PDvWYxYBLAoYPmMF3Y3i1e3J5nbXfP9n6ZlGDeZV5yd+yGddwS3AOQNshQAvmirzgdvbrpkVcibn3EVsA/gjmngPiRuKsd5v+VembciFDWTo1QVgFHAf+AGInvewsJEZqG2dNYJ3MogEyPAbRV+f5RJKBpNBNazyvyB8rRSKkynFhLkVg07sCmFM46vpBcSPrQo02c5tRCAG9Z1hNd1yUlC1+zaxJOndrSex1oW6hKThBp2XeIa0sZMEvps1yYeKdqYWqFo1bYvFFbTC/E0ynxiUacVqkD7kfqZ2v/2FZBtazpkxau1WqmFIkLn0g6Bj5ldgP1w7PKrpPcShbxareOQZQB+Bp86gdUoVmahiGf+0ZcQuMvunmgwiE9hENz36k2jKcR8x1hvNuhMPoBww7Cjt0A+mZqYuuc1jg9NyxloT92r8peVUuF1d9XmCoglSG+TT/gQOaCEVaqg2u3AR4MUke7U0TtNvOldVhkdFJMYCSUx+oOmBcBvsLCyTcFG+/sAAAAASUVORK5CYII="/>
 </svg>Chicken & Paprika Pizza</td>
                         <td>₹150</td>
                       </tr>
                       <tr>
                         <td><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22" height="22" viewBox="0 0 48 48" style="margin-bottom: -8px;">
-  <image href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAACIUlEQVRYhe2YT2sTQRiHf+9sbSrWpK0VpN2E3lr0IqKIIPgJbNNvIqWoBZGlVCI9tODNmx+h8Rt40EMRvNlraNacUpuqwdSy+5PdJOLF2cnuSHPIAwvLzs47z87/WdkszhJDhBommYix/s3zelPOU6TfUkNXQyOhJIa3Uw+C5+ZnlOTKAJchWALhxtkFPogDQt6Oy6+9jcOT4/8qtOO6F9tyukbwMcB8/PDvWYxYBLAoYPmMF3Y3i1e3J5nbXfP9n6ZlGDeZV5yd+yGddwS3AOQNshQAvmirzgdvbrpkVcibn3EVsA/gjmngPiRuKsd5v+VembciFDWTo1QVgFHAf+AGInvewsJEZqG2dNYJ3MogEyPAbRV+f5RJKBpNBNazyvyB8rRSKkynFhLkVg07sCmFM46vpBcSPrQo02c5tRCAG9Z1hNd1yUlC1+zaxJOndrSex1oW6hKThBp2XeIa0sZMEvps1yYeKdqYWqFo1bYvFFbTC/E0ynxiUacVqkD7kfqZ2v/2FZBtazpkxau1WqmFIkLn0g6Bj5ldgP1w7PKrpPcShbxareOQZQB+Bp86gdUoVmahiGf+0ZcQuMvunmgwiE9hENz36k2jKcR8x1hvNuhMPoBww7Cjt0A+mZqYuuc1jg9NyxloT92r8peVUuF1d9XmCoglSG+TT/gQOaCEVaqg2u3AR4MUke7U0TtNvOldVhkdFJMYCSUx+oOmBcBvsLCyTcFG+/sAAAAASUVORK5CYII="/>
+  <image  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAACIUlEQVRYhe2YT2sTQRiHf+9sbSrWpK0VpN2E3lr0IqKIIPgJbNNvIqWoBZGlVCI9tODNmx+h8Rt40EMRvNlraNacUpuqwdSy+5PdJOLF2cnuSHPIAwvLzs47z87/WdkszhJDhBommYix/s3zelPOU6TfUkNXQyOhJIa3Uw+C5+ZnlOTKAJchWALhxtkFPogDQt6Oy6+9jcOT4/8qtOO6F9tyukbwMcB8/PDvWYxYBLAoYPmMF3Y3i1e3J5nbXfP9n6ZlGDeZV5yd+yGddwS3AOQNshQAvmirzgdvbrpkVcibn3EVsA/gjmngPiRuKsd5v+VembciFDWTo1QVgFHAf+AGInvewsJEZqG2dNYJ3MogEyPAbRV+f5RJKBpNBNazyvyB8rRSKkynFhLkVg07sCmFM46vpBcSPrQo02c5tRCAG9Z1hNd1yUlC1+zaxJOndrSex1oW6hKThBp2XeIa0sZMEvps1yYeKdqYWqFo1bYvFFbTC/E0ynxiUacVqkD7kfqZ2v/2FZBtazpkxau1WqmFIkLn0g6Bj5ldgP1w7PKrpPcShbxareOQZQB+Bp86gdUoVmahiGf+0ZcQuMvunmgwiE9hENz36k2jKcR8x1hvNuhMPoBww7Cjt0A+mZqYuuc1jg9NyxloT92r8peVUuF1d9XmCoglSG+TT/gQOaCEVaqg2u3AR4MUke7U0TtNvOldVhkdFJMYCSUx+oOmBcBvsLCyTcFG+/sAAAAASUVORK5CYII="/>
 </svg>Chicken & Capsicum Pizza</td>
                         <td>₹150</td>
                       </tr>
                       <tr>
                         <td><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22" height="22" viewBox="0 0 48 48" style="margin-bottom: -8px;">
-  <image href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAACIUlEQVRYhe2YT2sTQRiHf+9sbSrWpK0VpN2E3lr0IqKIIPgJbNNvIqWoBZGlVCI9tODNmx+h8Rt40EMRvNlraNacUpuqwdSy+5PdJOLF2cnuSHPIAwvLzs47z87/WdkszhJDhBommYix/s3zelPOU6TfUkNXQyOhJIa3Uw+C5+ZnlOTKAJchWALhxtkFPogDQt6Oy6+9jcOT4/8qtOO6F9tyukbwMcB8/PDvWYxYBLAoYPmMF3Y3i1e3J5nbXfP9n6ZlGDeZV5yd+yGddwS3AOQNshQAvmirzgdvbrpkVcibn3EVsA/gjmngPiRuKsd5v+VembciFDWTo1QVgFHAf+AGInvewsJEZqG2dNYJ3MogEyPAbRV+f5RJKBpNBNazyvyB8rRSKkynFhLkVg07sCmFM46vpBcSPrQo02c5tRCAG9Z1hNd1yUlC1+zaxJOndrSex1oW6hKThBp2XeIa0sZMEvps1yYeKdqYWqFo1bYvFFbTC/E0ynxiUacVqkD7kfqZ2v/2FZBtazpkxau1WqmFIkLn0g6Bj5ldgP1w7PKrpPcShbxareOQZQB+Bp86gdUoVmahiGf+0ZcQuMvunmgwiE9hENz36k2jKcR8x1hvNuhMPoBww7Cjt0A+mZqYuuc1jg9NyxloT92r8peVUuF1d9XmCoglSG+TT/gQOaCEVaqg2u3AR4MUke7U0TtNvOldVhkdFJMYCSUx+oOmBcBvsLCyTcFG+/sAAAAASUVORK5CYII="/>
+  <image  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAACIUlEQVRYhe2YT2sTQRiHf+9sbSrWpK0VpN2E3lr0IqKIIPgJbNNvIqWoBZGlVCI9tODNmx+h8Rt40EMRvNlraNacUpuqwdSy+5PdJOLF2cnuSHPIAwvLzs47z87/WdkszhJDhBommYix/s3zelPOU6TfUkNXQyOhJIa3Uw+C5+ZnlOTKAJchWALhxtkFPogDQt6Oy6+9jcOT4/8qtOO6F9tyukbwMcB8/PDvWYxYBLAoYPmMF3Y3i1e3J5nbXfP9n6ZlGDeZV5yd+yGddwS3AOQNshQAvmirzgdvbrpkVcibn3EVsA/gjmngPiRuKsd5v+VembciFDWTo1QVgFHAf+AGInvewsJEZqG2dNYJ3MogEyPAbRV+f5RJKBpNBNazyvyB8rRSKkynFhLkVg07sCmFM46vpBcSPrQo02c5tRCAG9Z1hNd1yUlC1+zaxJOndrSex1oW6hKThBp2XeIa0sZMEvps1yYeKdqYWqFo1bYvFFbTC/E0ynxiUacVqkD7kfqZ2v/2FZBtazpkxau1WqmFIkLn0g6Bj5ldgP1w7PKrpPcShbxareOQZQB+Bp86gdUoVmahiGf+0ZcQuMvunmgwiE9hENz36k2jKcR8x1hvNuhMPoBww7Cjt0A+mZqYuuc1jg9NyxloT92r8peVUuF1d9XmCoglSG+TT/gQOaCEVaqg2u3AR4MUke7U0TtNvOldVhkdFJMYCSUx+oOmBcBvsLCyTcFG+/sAAAAASUVORK5CYII="/>
 </svg>Chicken & Mushroom Pizza</td>
                         <td>₹150</td>
                       </tr>
 
                       <tr>
                         <td><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22" height="22" viewBox="0 0 48 48" style="margin-bottom: -8px;">
-  <image  href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAACIUlEQVRYhe2YT2sTQRiHf+9sbSrWpK0VpN2E3lr0IqKIIPgJbNNvIqWoBZGlVCI9tODNmx+h8Rt40EMRvNlraNacUpuqwdSy+5PdJOLF2cnuSHPIAwvLzs47z87/WdkszhJDhBommYix/s3zelPOU6TfUkNXQyOhJIa3Uw+C5+ZnlOTKAJchWALhxtkFPogDQt6Oy6+9jcOT4/8qtOO6F9tyukbwMcB8/PDvWYxYBLAoYPmMF3Y3i1e3J5nbXfP9n6ZlGDeZV5yd+yGddwS3AOQNshQAvmirzgdvbrpkVcibn3EVsA/gjmngPiRuKsd5v+VembciFDWTo1QVgFHAf+AGInvewsJEZqG2dNYJ3MogEyPAbRV+f5RJKBpNBNazyvyB8rRSKkynFhLkVg07sCmFM46vpBcSPrQo02c5tRCAG9Z1hNd1yUlC1+zaxJOndrSex1oW6hKThBp2XeIa0sZMEvps1yYeKdqYWqFo1bYvFFbTC/E0ynxiUacVqkD7kfqZ2v/2FZBtazpkxau1WqmFIkLn0g6Bj5ldgP1w7PKrpPcShbxareOQZQB+Bp86gdUoVmahiGf+0ZcQuMvunmgwiE9hENz36k2jKcR8x1hvNuhMPoBww7Cjt0A+mZqYuuc1jg9NyxloT92r8peVUuF1d9XmCoglSG+TT/gQOaCEVaqg2u3AR4MUke7U0TtNvOldVhkdFJMYCSUx+oOmBcBvsLCyTcFG+/sAAAAASUVORK5CYII="/>
+  <image  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAACIUlEQVRYhe2YT2sTQRiHf+9sbSrWpK0VpN2E3lr0IqKIIPgJbNNvIqWoBZGlVCI9tODNmx+h8Rt40EMRvNlraNacUpuqwdSy+5PdJOLF2cnuSHPIAwvLzs47z87/WdkszhJDhBommYix/s3zelPOU6TfUkNXQyOhJIa3Uw+C5+ZnlOTKAJchWALhxtkFPogDQt6Oy6+9jcOT4/8qtOO6F9tyukbwMcB8/PDvWYxYBLAoYPmMF3Y3i1e3J5nbXfP9n6ZlGDeZV5yd+yGddwS3AOQNshQAvmirzgdvbrpkVcibn3EVsA/gjmngPiRuKsd5v+VembciFDWTo1QVgFHAf+AGInvewsJEZqG2dNYJ3MogEyPAbRV+f5RJKBpNBNazyvyB8rRSKkynFhLkVg07sCmFM46vpBcSPrQo02c5tRCAG9Z1hNd1yUlC1+zaxJOndrSex1oW6hKThBp2XeIa0sZMEvps1yYeKdqYWqFo1bYvFFbTC/E0ynxiUacVqkD7kfqZ2v/2FZBtazpkxau1WqmFIkLn0g6Bj5ldgP1w7PKrpPcShbxareOQZQB+Bp86gdUoVmahiGf+0ZcQuMvunmgwiE9hENz36k2jKcR8x1hvNuhMPoBww7Cjt0A+mZqYuuc1jg9NyxloT92r8peVUuF1d9XmCoglSG+TT/gQOaCEVaqg2u3AR4MUke7U0TtNvOldVhkdFJMYCSUx+oOmBcBvsLCyTcFG+/sAAAAASUVORK5CYII="/>
 </svg>Sausage & Onion Pizza</td>
                         <td>₹150</td>
                       </tr>
 
                       <tr>
                         <td><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22" height="22" viewBox="0 0 48 48" style="margin-bottom: -8px;">
-  <image  href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAACIUlEQVRYhe2YT2sTQRiHf+9sbSrWpK0VpN2E3lr0IqKIIPgJbNNvIqWoBZGlVCI9tODNmx+h8Rt40EMRvNlraNacUpuqwdSy+5PdJOLF2cnuSHPIAwvLzs47z87/WdkszhJDhBommYix/s3zelPOU6TfUkNXQyOhJIa3Uw+C5+ZnlOTKAJchWALhxtkFPogDQt6Oy6+9jcOT4/8qtOO6F9tyukbwMcB8/PDvWYxYBLAoYPmMF3Y3i1e3J5nbXfP9n6ZlGDeZV5yd+yGddwS3AOQNshQAvmirzgdvbrpkVcibn3EVsA/gjmngPiRuKsd5v+VembciFDWTo1QVgFHAf+AGInvewsJEZqG2dNYJ3MogEyPAbRV+f5RJKBpNBNazyvyB8rRSKkynFhLkVg07sCmFM46vpBcSPrQo02c5tRCAG9Z1hNd1yUlC1+zaxJOndrSex1oW6hKThBp2XeIa0sZMEvps1yYeKdqYWqFo1bYvFFbTC/E0ynxiUacVqkD7kfqZ2v/2FZBtazpkxau1WqmFIkLn0g6Bj5ldgP1w7PKrpPcShbxareOQZQB+Bp86gdUoVmahiGf+0ZcQuMvunmgwiE9hENz36k2jKcR8x1hvNuhMPoBww7Cjt0A+mZqYuuc1jg9NyxloT92r8peVUuF1d9XmCoglSG+TT/gQOaCEVaqg2u3AR4MUke7U0TtNvOldVhkdFJMYCSUx+oOmBcBvsLCyTcFG+/sAAAAASUVORK5CYII="/>
+  <image  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAACIUlEQVRYhe2YT2sTQRiHf+9sbSrWpK0VpN2E3lr0IqKIIPgJbNNvIqWoBZGlVCI9tODNmx+h8Rt40EMRvNlraNacUpuqwdSy+5PdJOLF2cnuSHPIAwvLzs47z87/WdkszhJDhBommYix/s3zelPOU6TfUkNXQyOhJIa3Uw+C5+ZnlOTKAJchWALhxtkFPogDQt6Oy6+9jcOT4/8qtOO6F9tyukbwMcB8/PDvWYxYBLAoYPmMF3Y3i1e3J5nbXfP9n6ZlGDeZV5yd+yGddwS3AOQNshQAvmirzgdvbrpkVcibn3EVsA/gjmngPiRuKsd5v+VembciFDWTo1QVgFHAf+AGInvewsJEZqG2dNYJ3MogEyPAbRV+f5RJKBpNBNazyvyB8rRSKkynFhLkVg07sCmFM46vpBcSPrQo02c5tRCAG9Z1hNd1yUlC1+zaxJOndrSex1oW6hKThBp2XeIa0sZMEvps1yYeKdqYWqFo1bYvFFbTC/E0ynxiUacVqkD7kfqZ2v/2FZBtazpkxau1WqmFIkLn0g6Bj5ldgP1w7PKrpPcShbxareOQZQB+Bp86gdUoVmahiGf+0ZcQuMvunmgwiE9hENz36k2jKcR8x1hvNuhMPoBww7Cjt0A+mZqYuuc1jg9NyxloT92r8peVUuF1d9XmCoglSG+TT/gQOaCEVaqg2u3AR4MUke7U0TtNvOldVhkdFJMYCSUx+oOmBcBvsLCyTcFG+/sAAAAASUVORK5CYII="/>
 </svg>Sausage & Jalapeno Pizza</td>
                         <td>₹150</td>
                       </tr>
-                    </tbody>
-                  </table>
-                </div>
-            </div>
-<!-- new menu-->
- <div class="row">
-                <div class="col-sm-12 col-md-6">
-                  <table class="table table-borderless textw pad5">
-                    <tbody>
-                      
 
                        <tr>
                     
                         <td >
                         	
                         	<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22" height="22" viewBox="0 0 48 48" style="margin-bottom: -8px;">
-  <image  href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAACIUlEQVRYhe2YT2sTQRiHf+9sbSrWpK0VpN2E3lr0IqKIIPgJbNNvIqWoBZGlVCI9tODNmx+h8Rt40EMRvNlraNacUpuqwdSy+5PdJOLF2cnuSHPIAwvLzs47z87/WdkszhJDhBommYix/s3zelPOU6TfUkNXQyOhJIa3Uw+C5+ZnlOTKAJchWALhxtkFPogDQt6Oy6+9jcOT4/8qtOO6F9tyukbwMcB8/PDvWYxYBLAoYPmMF3Y3i1e3J5nbXfP9n6ZlGDeZV5yd+yGddwS3AOQNshQAvmirzgdvbrpkVcibn3EVsA/gjmngPiRuKsd5v+VembciFDWTo1QVgFHAf+AGInvewsJEZqG2dNYJ3MogEyPAbRV+f5RJKBpNBNazyvyB8rRSKkynFhLkVg07sCmFM46vpBcSPrQo02c5tRCAG9Z1hNd1yUlC1+zaxJOndrSex1oW6hKThBp2XeIa0sZMEvps1yYeKdqYWqFo1bYvFFbTC/E0ynxiUacVqkD7kfqZ2v/2FZBtazpkxau1WqmFIkLn0g6Bj5ldgP1w7PKrpPcShbxareOQZQB+Bp86gdUoVmahiGf+0ZcQuMvunmgwiE9hENz36k2jKcR8x1hvNuhMPoBww7Cjt0A+mZqYuuc1jg9NyxloT92r8peVUuF1d9XmCoglSG+TT/gQOaCEVaqg2u3AR4MUke7U0TtNvOldVhkdFJMYCSUx+oOmBcBvsLCyTcFG+/sAAAAASUVORK5CYII="/>
+  <image  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAACIUlEQVRYhe2YT2sTQRiHf+9sbSrWpK0VpN2E3lr0IqKIIPgJbNNvIqWoBZGlVCI9tODNmx+h8Rt40EMRvNlraNacUpuqwdSy+5PdJOLF2cnuSHPIAwvLzs47z87/WdkszhJDhBommYix/s3zelPOU6TfUkNXQyOhJIa3Uw+C5+ZnlOTKAJchWALhxtkFPogDQt6Oy6+9jcOT4/8qtOO6F9tyukbwMcB8/PDvWYxYBLAoYPmMF3Y3i1e3J5nbXfP9n6ZlGDeZV5yd+yGddwS3AOQNshQAvmirzgdvbrpkVcibn3EVsA/gjmngPiRuKsd5v+VembciFDWTo1QVgFHAf+AGInvewsJEZqG2dNYJ3MogEyPAbRV+f5RJKBpNBNazyvyB8rRSKkynFhLkVg07sCmFM46vpBcSPrQo02c5tRCAG9Z1hNd1yUlC1+zaxJOndrSex1oW6hKThBp2XeIa0sZMEvps1yYeKdqYWqFo1bYvFFbTC/E0ynxiUacVqkD7kfqZ2v/2FZBtazpkxau1WqmFIkLn0g6Bj5ldgP1w7PKrpPcShbxareOQZQB+Bp86gdUoVmahiGf+0ZcQuMvunmgwiE9hENz36k2jKcR8x1hvNuhMPoBww7Cjt0A+mZqYuuc1jg9NyxloT92r8peVUuF1d9XmCoglSG+TT/gQOaCEVaqg2u3AR4MUke7U0TtNvOldVhkdFJMYCSUx+oOmBcBvsLCyTcFG+/sAAAAASUVORK5CYII="/>
 </svg>
 Sausage & corn Pizza</td>
                         <td>₹120</td>
                       </tr>
-
-                      
-
                     </tbody>
                   </table>
                 </div>
-                <div class="col-sm-12 order-1 order-md-2 col-md-6">
-                  <img src="assets\img\backpizza.jpg" class="img-fluid">
-                </div>
-              </div>
+<!-- new menu-->
+ 
 
 
 
@@ -627,14 +613,14 @@ Sausage & corn Pizza</td>
 </div>
 </div>
 </div> -->
-
+</div>
 <div class="collapse pizza" id="italian_classic_pizza" data-parent="#accordion">
 	 <div class="bg-danger container-fluid">
                     <div class="row">
                       <div class="col-sm-12 col-md-6">
                         <img src="assets\img\pizza.jpg" class="img-fluid minpic">
                       </div>
-                      <div class="col-sm-12 col-md-6 ">
+                      <div class="col-sm-12 col-md-6 we">
                         <table class="table textw pad5">
                           <tbody>
                           	 <tr>
@@ -642,7 +628,7 @@ Sausage & corn Pizza</td>
                         <td >
                         	
                         	<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22" height="22" viewBox="0 0 48 48"  style="margin-bottom: -8px;">
-  <image  href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAACFklEQVRYhe2YvW7TUBSAv2M7NF1SlQnRiLUVLAiBWqtG5AVo0ycBoorSrQMo0MEV3dh4hKZPkEoOqSokNrrzN0LbpaA6OeiSRGLBduKLmiGfZMmS7XO/e8+5vteWpTBQxghnnGQM3uDksBbJZYoMMjV2IzQRSmN8i3oY/NC/irhVVFe6yIJA2Tyu8AXlGGG/8Iu9aDP68V+F/NCfVnVrCk9RSiD8PTUF5hHmgWo8xc5SeH9biHfatfZ51jYyp2z51fJ1Ve8A4TkYmVRmQF90cd8Fr4MbVoUWdyvlTkGOEL2XNfAAgdtxh5Yf+nNWhEyaJI4bQKaA/6AM7l5lq1LMLdQVZx24k0PmDwp3z0vx41xCZjaJynpemQECz4J6MDuyEDhrGQs4KzPxFVnNIcRDizI9RFeSLicKKc4t2z4KN0cWAr1m2cfUUeJsvYy1rJt0MU3om12X9JjJNaR8tK5DcszkERL2bduI0hhZyKFjHj61JaNwMuV4iZ1MFGrX2t9Btm0JiUi9+aR5MrKQoXjmhgLvLfgcFU/d3bSbUoWaW82f0KlidoOj89m90LVerJxC9FL31b3QRdPL4ZX0g+cStDZamV4hmV+MJmDxzHugsJml0E0BI7Ix65X86FH0KWs7Q+2p+0P+MqgHb8yqreiqCAv0N/n9tB6DNqal0Egr4NxCA/pfE2/7h1UmH4ppTITSmPxBSwT4DSSSm+a3NIEbAAAAAElFTkSuQmCC"/>
+  <image  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAACFklEQVRYhe2YvW7TUBSAv2M7NF1SlQnRiLUVLAiBWqtG5AVo0ycBoorSrQMo0MEV3dh4hKZPkEoOqSokNrrzN0LbpaA6OeiSRGLBduKLmiGfZMmS7XO/e8+5vteWpTBQxghnnGQM3uDksBbJZYoMMjV2IzQRSmN8i3oY/NC/irhVVFe6yIJA2Tyu8AXlGGG/8Iu9aDP68V+F/NCfVnVrCk9RSiD8PTUF5hHmgWo8xc5SeH9biHfatfZ51jYyp2z51fJ1Ve8A4TkYmVRmQF90cd8Fr4MbVoUWdyvlTkGOEL2XNfAAgdtxh5Yf+nNWhEyaJI4bQKaA/6AM7l5lq1LMLdQVZx24k0PmDwp3z0vx41xCZjaJynpemQECz4J6MDuyEDhrGQs4KzPxFVnNIcRDizI9RFeSLicKKc4t2z4KN0cWAr1m2cfUUeJsvYy1rJt0MU3om12X9JjJNaR8tK5DcszkERL2bduI0hhZyKFjHj61JaNwMuV4iZ1MFGrX2t9Btm0JiUi9+aR5MrKQoXjmhgLvLfgcFU/d3bSbUoWaW82f0KlidoOj89m90LVerJxC9FL31b3QRdPL4ZX0g+cStDZamV4hmV+MJmDxzHugsJml0E0BI7Ix65X86FH0KWs7Q+2p+0P+MqgHb8yqreiqCAv0N/n9tB6DNqal0Egr4NxCA/pfE2/7h1UmH4ppTITSmPxBSwT4DSSSm+a3NIEbAAAAAElFTkSuQmCC"/>
 </svg>
 Margherita Classic Pizza</td>
                         <td>M-₹220 &nbsp; &nbsp; L-₹360</td>
@@ -652,7 +638,7 @@ Margherita Classic Pizza</td>
                         <td >
                         	
                         	<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22" height="22" viewBox="0 0 48 48"  style="margin-bottom: -8px;">
-  <image  href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAACFklEQVRYhe2YvW7TUBSAv2M7NF1SlQnRiLUVLAiBWqtG5AVo0ycBoorSrQMo0MEV3dh4hKZPkEoOqSokNrrzN0LbpaA6OeiSRGLBduKLmiGfZMmS7XO/e8+5vteWpTBQxghnnGQM3uDksBbJZYoMMjV2IzQRSmN8i3oY/NC/irhVVFe6yIJA2Tyu8AXlGGG/8Iu9aDP68V+F/NCfVnVrCk9RSiD8PTUF5hHmgWo8xc5SeH9biHfatfZ51jYyp2z51fJ1Ve8A4TkYmVRmQF90cd8Fr4MbVoUWdyvlTkGOEL2XNfAAgdtxh5Yf+nNWhEyaJI4bQKaA/6AM7l5lq1LMLdQVZx24k0PmDwp3z0vx41xCZjaJynpemQECz4J6MDuyEDhrGQs4KzPxFVnNIcRDizI9RFeSLicKKc4t2z4KN0cWAr1m2cfUUeJsvYy1rJt0MU3om12X9JjJNaR8tK5DcszkERL2bduI0hhZyKFjHj61JaNwMuV4iZ1MFGrX2t9Btm0JiUi9+aR5MrKQoXjmhgLvLfgcFU/d3bSbUoWaW82f0KlidoOj89m90LVerJxC9FL31b3QRdPL4ZX0g+cStDZamV4hmV+MJmDxzHugsJml0E0BI7Ix65X86FH0KWs7Q+2p+0P+MqgHb8yqreiqCAv0N/n9tB6DNqal0Egr4NxCA/pfE2/7h1UmH4ppTITSmPxBSwT4DSSSm+a3NIEbAAAAAElFTkSuQmCC"/>
+  <image  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAACFklEQVRYhe2YvW7TUBSAv2M7NF1SlQnRiLUVLAiBWqtG5AVo0ycBoorSrQMo0MEV3dh4hKZPkEoOqSokNrrzN0LbpaA6OeiSRGLBduKLmiGfZMmS7XO/e8+5vteWpTBQxghnnGQM3uDksBbJZYoMMjV2IzQRSmN8i3oY/NC/irhVVFe6yIJA2Tyu8AXlGGG/8Iu9aDP68V+F/NCfVnVrCk9RSiD8PTUF5hHmgWo8xc5SeH9biHfatfZ51jYyp2z51fJ1Ve8A4TkYmVRmQF90cd8Fr4MbVoUWdyvlTkGOEL2XNfAAgdtxh5Yf+nNWhEyaJI4bQKaA/6AM7l5lq1LMLdQVZx24k0PmDwp3z0vx41xCZjaJynpemQECz4J6MDuyEDhrGQs4KzPxFVnNIcRDizI9RFeSLicKKc4t2z4KN0cWAr1m2cfUUeJsvYy1rJt0MU3om12X9JjJNaR8tK5DcszkERL2bduI0hhZyKFjHj61JaNwMuV4iZ1MFGrX2t9Btm0JiUi9+aR5MrKQoXjmhgLvLfgcFU/d3bSbUoWaW82f0KlidoOj89m90LVerJxC9FL31b3QRdPL4ZX0g+cStDZamV4hmV+MJmDxzHugsJml0E0BI7Ix65X86FH0KWs7Q+2p+0P+MqgHb8yqreiqCAv0N/n9tB6DNqal0Egr4NxCA/pfE2/7h1UmH4ppTITSmPxBSwT4DSSSm+a3NIEbAAAAAElFTkSuQmCC"/>
 </svg>
 Margherita Basil Pesto Pizza</td>
                         <td>M-₹250 &nbsp; &nbsp; L-₹380</td>
@@ -703,7 +689,7 @@ Margherita Basil Pesto Pizza</td>
                       <div class="col-sm-12 col-md-6">
                         <img src="assets\img\pizza.jpg" class="img-fluid minpic">
                       </div>
-                      <div class="col-sm-12 col-md-6">
+                      <div class="col-sm-12 col-md-6 we">
                         <table class="table textw pad5">
                           <tbody>
                           	 <tr>
@@ -711,7 +697,7 @@ Margherita Basil Pesto Pizza</td>
                         <td >
                         	
                         	<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22" height="22" viewBox="0 0 48 48"  style="margin-bottom: -8px;">
-  <image href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAACFklEQVRYhe2YvW7TUBSAv2M7NF1SlQnRiLUVLAiBWqtG5AVo0ycBoorSrQMo0MEV3dh4hKZPkEoOqSokNrrzN0LbpaA6OeiSRGLBduKLmiGfZMmS7XO/e8+5vteWpTBQxghnnGQM3uDksBbJZYoMMjV2IzQRSmN8i3oY/NC/irhVVFe6yIJA2Tyu8AXlGGG/8Iu9aDP68V+F/NCfVnVrCk9RSiD8PTUF5hHmgWo8xc5SeH9biHfatfZ51jYyp2z51fJ1Ve8A4TkYmVRmQF90cd8Fr4MbVoUWdyvlTkGOEL2XNfAAgdtxh5Yf+nNWhEyaJI4bQKaA/6AM7l5lq1LMLdQVZx24k0PmDwp3z0vx41xCZjaJynpemQECz4J6MDuyEDhrGQs4KzPxFVnNIcRDizI9RFeSLicKKc4t2z4KN0cWAr1m2cfUUeJsvYy1rJt0MU3om12X9JjJNaR8tK5DcszkERL2bduI0hhZyKFjHj61JaNwMuV4iZ1MFGrX2t9Btm0JiUi9+aR5MrKQoXjmhgLvLfgcFU/d3bSbUoWaW82f0KlidoOj89m90LVerJxC9FL31b3QRdPL4ZX0g+cStDZamV4hmV+MJmDxzHugsJml0E0BI7Ix65X86FH0KWs7Q+2p+0P+MqgHb8yqreiqCAv0N/n9tB6DNqal0Egr4NxCA/pfE2/7h1UmH4ppTITSmPxBSwT4DSSSm+a3NIEbAAAAAElFTkSuQmCC"/>
+  <image  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAACFklEQVRYhe2YvW7TUBSAv2M7NF1SlQnRiLUVLAiBWqtG5AVo0ycBoorSrQMo0MEV3dh4hKZPkEoOqSokNrrzN0LbpaA6OeiSRGLBduKLmiGfZMmS7XO/e8+5vteWpTBQxghnnGQM3uDksBbJZYoMMjV2IzQRSmN8i3oY/NC/irhVVFe6yIJA2Tyu8AXlGGG/8Iu9aDP68V+F/NCfVnVrCk9RSiD8PTUF5hHmgWo8xc5SeH9biHfatfZ51jYyp2z51fJ1Ve8A4TkYmVRmQF90cd8Fr4MbVoUWdyvlTkGOEL2XNfAAgdtxh5Yf+nNWhEyaJI4bQKaA/6AM7l5lq1LMLdQVZx24k0PmDwp3z0vx41xCZjaJynpemQECz4J6MDuyEDhrGQs4KzPxFVnNIcRDizI9RFeSLicKKc4t2z4KN0cWAr1m2cfUUeJsvYy1rJt0MU3om12X9JjJNaR8tK5DcszkERL2bduI0hhZyKFjHj61JaNwMuV4iZ1MFGrX2t9Btm0JiUi9+aR5MrKQoXjmhgLvLfgcFU/d3bSbUoWaW82f0KlidoOj89m90LVerJxC9FL31b3QRdPL4ZX0g+cStDZamV4hmV+MJmDxzHugsJml0E0BI7Ix65X86FH0KWs7Q+2p+0P+MqgHb8yqreiqCAv0N/n9tB6DNqal0Egr4NxCA/pfE2/7h1UmH4ppTITSmPxBSwT4DSSSm+a3NIEbAAAAAElFTkSuQmCC"/>
 </svg>
 Broccli & Cheese Pizza</td>
                         <td>M-₹220 &nbsp; &nbsp; L-₹360</td>
@@ -721,7 +707,7 @@ Broccli & Cheese Pizza</td>
                         <td >
                         	
                         	<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22" height="22" viewBox="0 0 48 48"  style="margin-bottom: -8px;">
-  <image  href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAACFklEQVRYhe2YvW7TUBSAv2M7NF1SlQnRiLUVLAiBWqtG5AVo0ycBoorSrQMo0MEV3dh4hKZPkEoOqSokNrrzN0LbpaA6OeiSRGLBduKLmiGfZMmS7XO/e8+5vteWpTBQxghnnGQM3uDksBbJZYoMMjV2IzQRSmN8i3oY/NC/irhVVFe6yIJA2Tyu8AXlGGG/8Iu9aDP68V+F/NCfVnVrCk9RSiD8PTUF5hHmgWo8xc5SeH9biHfatfZ51jYyp2z51fJ1Ve8A4TkYmVRmQF90cd8Fr4MbVoUWdyvlTkGOEL2XNfAAgdtxh5Yf+nNWhEyaJI4bQKaA/6AM7l5lq1LMLdQVZx24k0PmDwp3z0vx41xCZjaJynpemQECz4J6MDuyEDhrGQs4KzPxFVnNIcRDizI9RFeSLicKKc4t2z4KN0cWAr1m2cfUUeJsvYy1rJt0MU3om12X9JjJNaR8tK5DcszkERL2bduI0hhZyKFjHj61JaNwMuV4iZ1MFGrX2t9Btm0JiUi9+aR5MrKQoXjmhgLvLfgcFU/d3bSbUoWaW82f0KlidoOj89m90LVerJxC9FL31b3QRdPL4ZX0g+cStDZamV4hmV+MJmDxzHugsJml0E0BI7Ix65X86FH0KWs7Q+2p+0P+MqgHb8yqreiqCAv0N/n9tB6DNqal0Egr4NxCA/pfE2/7h1UmH4ppTITSmPxBSwT4DSSSm+a3NIEbAAAAAElFTkSuQmCC"/>
+  <image  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAACFklEQVRYhe2YvW7TUBSAv2M7NF1SlQnRiLUVLAiBWqtG5AVo0ycBoorSrQMo0MEV3dh4hKZPkEoOqSokNrrzN0LbpaA6OeiSRGLBduKLmiGfZMmS7XO/e8+5vteWpTBQxghnnGQM3uDksBbJZYoMMjV2IzQRSmN8i3oY/NC/irhVVFe6yIJA2Tyu8AXlGGG/8Iu9aDP68V+F/NCfVnVrCk9RSiD8PTUF5hHmgWo8xc5SeH9biHfatfZ51jYyp2z51fJ1Ve8A4TkYmVRmQF90cd8Fr4MbVoUWdyvlTkGOEL2XNfAAgdtxh5Yf+nNWhEyaJI4bQKaA/6AM7l5lq1LMLdQVZx24k0PmDwp3z0vx41xCZjaJynpemQECz4J6MDuyEDhrGQs4KzPxFVnNIcRDizI9RFeSLicKKc4t2z4KN0cWAr1m2cfUUeJsvYy1rJt0MU3om12X9JjJNaR8tK5DcszkERL2bduI0hhZyKFjHj61JaNwMuV4iZ1MFGrX2t9Btm0JiUi9+aR5MrKQoXjmhgLvLfgcFU/d3bSbUoWaW82f0KlidoOj89m90LVerJxC9FL31b3QRdPL4ZX0g+cStDZamV4hmV+MJmDxzHugsJml0E0BI7Ix65X86FH0KWs7Q+2p+0P+MqgHb8yqreiqCAv0N/n9tB6DNqal0Egr4NxCA/pfE2/7h1UmH4ppTITSmPxBSwT4DSSSm+a3NIEbAAAAAElFTkSuQmCC"/>
 </svg>
 Bell Peper & Cheese Pizza</td>
                         <td>M-₹250 &nbsp; &nbsp; L-₹380</td>
@@ -1922,7 +1908,7 @@ Bell Peper & Cheese Pizza</td>
 
         <!-- FOOTER -->
 
-        <footer class="page-footer foot" id="bottom" style="height: auto;padding-top: 20px;padding-left: 10px;padding-right: 10px;">
+        <footer class="page-footer foot" id="bottom" style=" height: auto;padding-top: 20px;padding-left: 10px;padding-right: 10px;">
 
             <div class="d-flex" style="padding-left: 5px;">
 
@@ -1983,7 +1969,7 @@ Bell Peper & Cheese Pizza</td>
                         <h3 class="text-center" style="padding-left: 10px;">Location:</h3>
 
 
-                        <div class="maps text-center" style="padding-left: 20px;">
+                        <div class="maps text-center" style="">
                             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3890.2175256862874!2d80.04238721464358!3d12.829215590949442!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a52f76dc9bdd1fb%3A0x6269b197f62c91b1!2sThe%20Rock%20N%20Roll%20Cafe%20%26%20Wood%20Oven%20Pizzeria!5e0!3m2!1sen!2sin!4v1569902609151!5m2!1sen!2sin"
                                 width="100%" height="100%" frameborder="0" allowfullscreen=""></iframe>
                         </div>
@@ -2029,9 +2015,9 @@ Bell Peper & Cheese Pizza</td>
 
 
             </div>
-            <div class="footer-copyright text-center copy" style="width: 100%">
+            <div class="footer-copyright  copy" style="width: 100%">
 
-                <label>&copy; 2019 | Developed by the Web Devs at <a href="http://msclubsrm.com" style="color:black; font-weight: 600;" >MSTC</a> </label>
+                <label style="width: 100%">&copy; 2019 | Developed by the Web Devs at <a href="http://msclubsrm.com" style="color:black; font-weight: 600;" >MSTC</a> </label>
             </div>
         </footer>
 
