@@ -5,6 +5,7 @@ html {
     scroll-behavior: smooth;
 }
 
+
 .pad {
     padding: 10%;
     padding-right: 10%;
@@ -317,11 +318,11 @@ body {
     background-repeat: no-repeat;
 }
 
-.drinks {
+/* .drinks {
     background-image: url("../img/backdrinks.jpg");
     background-position: center;
     background-repeat: no-repeat;
-}
+} */
 
 .desserts {
     background-image: url("../img/backdeserts.jpg");
