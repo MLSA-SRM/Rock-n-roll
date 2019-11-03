@@ -5,7 +5,6 @@ html {
     scroll-behavior: smooth;
 }
 
-
 .pad {
     padding: 10%;
     padding-right: 10%;
@@ -158,6 +157,22 @@ header {
     color: orange;
     font-size: 1em;
 }
+.carousel-caption{
+top: 50%;
+transform: translateY(-50%);
+bottom: initial;
+}
+
+.carousel-caption h5{
+font-size: 45px;
+letter-spacing: 2px;
+}
+
+.carousel-caption p{
+font-size:25px;
+letter-spacing: 1px;
+}
+
 
 
 /* VARUN */
@@ -318,11 +333,11 @@ body {
     background-repeat: no-repeat;
 }
 
-/* .drinks {
+.drinks {
     background-image: url("../img/backdrinks.jpg");
     background-position: center;
     background-repeat: no-repeat;
-} */
+}
 
 .desserts {
     background-image: url("../img/backdeserts.jpg");
