@@ -59,6 +59,13 @@ table.borderless td,table.borderless th{
     /* font-family: cursive; */
 }
 
+.texthw{
+  color: white;
+  font-size: 40px;
+  padding-top: 25px;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
 .texth-white {
     color: white;
     padding-top: 50px;
