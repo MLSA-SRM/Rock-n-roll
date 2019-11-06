@@ -124,7 +124,7 @@ header {
 }
 
 .bgcolhead {
-    background-color: #C00A27
+    background-color: #C00A27;
 }
 
 .navbar-light .navbar-nav .nav-item .nav-link:hover,
@@ -132,6 +132,14 @@ header {
     background: #262626;
     color: #fff;
 }
+.nav > .active > a {
+  color: aqua;
+  background-color: chartreuse;    
+}
+.nav-item > a:hover {
+  color: aqua;
+}
+
 
 .navbar-light .navbar-nav .nav-item .nav-link {
     color: #262626;
@@ -322,6 +330,8 @@ body {
     background-repeat: no-repeat;
 }
 
+
+
 .sides {
     background-image: url("../img/backsides.jpg");
     background-position: center;
@@ -329,7 +339,7 @@ body {
 }
 
 .burger {
-    background-image: url("../img/backburger.jpg");
+   /* background-image: url("../img/backburger.jpg");*/
     background-position: center;
     background-repeat: no-repeat;
 }
