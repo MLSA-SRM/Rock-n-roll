@@ -172,24 +172,28 @@ header {
     color: orange;
     font-size: 1em;
 }
-.carousel-caption{
-top: 50%;
-transform: translateY(-50%);
-bottom: initial;
-}
 
-.carousel-caption h5{
+
+.main-text h5{
 font-size: 6vh;
 letter-spacing: 2px;
 font-weight: bold;
 }
 
-.carousel-caption p{
+.main-text p{
 font-size:25px;
 letter-spacing: 1px;
 }
 
-
+.main-text
+{
+    position: absolute;
+    top: 50%;
+transform: translateY(-50%);
+bottom: initial;
+    width: 96.66666666666666%;
+    color: #FFF;
+}
 
 /* VARUN */
 
