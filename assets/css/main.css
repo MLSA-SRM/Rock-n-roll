@@ -59,6 +59,13 @@ table.borderless td,table.borderless th{
     /* font-family: cursive; */
 }
 
+.texthw{
+  color: white;
+  font-size: 40px;
+  padding-top: 25px;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
 .texth-white {
     color: white;
     padding-top: 50px;
@@ -117,7 +124,7 @@ header {
 }
 
 .bgcolhead {
-    background-color: #C00A27
+    background-color: #C00A27;
 }
 
 .navbar-light .navbar-nav .nav-item .nav-link:hover,
@@ -125,6 +132,14 @@ header {
     background: #262626;
     color: #fff;
 }
+.nav > .active > a {
+  color: aqua;
+  background-color: chartreuse;    
+}
+.nav-item > a:hover {
+  color: aqua;
+}
+
 
 .navbar-light .navbar-nav .nav-item .nav-link {
     color: #262626;
@@ -157,23 +172,27 @@ header {
     color: orange;
     font-size: 1em;
 }
-.carousel-caption{
-top: 50%;
-transform: translateY(-50%);
-bottom: initial;
-}
 
-.carousel-caption h5{
-font-size: 45px;
+.main-text h5{
+font-size: 6vh;
 letter-spacing: 2px;
+font-weight: bold;
 }
 
-.carousel-caption p{
+.main-text p{
 font-size:25px;
 letter-spacing: 1px;
 }
 
-
+.main-text
+{
+    position: absolute;
+    top: 50%;
+transform: translateY(-50%);
+bottom: initial;
+    width: 96.66666666666666%;
+    color: #FFF;
+}
 
 /* VARUN */
 
@@ -315,6 +334,8 @@ body {
     background-repeat: no-repeat;
 }
 
+
+
 .sides {
     background-image: url("../img/backsides.jpg");
     background-position: center;
@@ -322,7 +343,7 @@ body {
 }
 
 .burger {
-    background-image: url("../img/backburger.jpg");
+   /* background-image: url("../img/backburger.jpg");*/
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -343,4 +364,28 @@ body {
     background-image: url("../img/backdeserts.jpg");
     background-position: center;
     background-repeat: no-repeat;
+}
+
+/*a[aria-expanded="true"]{
+  background-color: #42DCA3 !important;
+}*/
+a.text-light:focus,
+a.text-light:hover,
+a[aria-expanded="true"] {
+background-color:#BD2130 !important;
+color: white !important;
+}
+a[aria-expanded="true"]:hover {
+    color: white !important;
+}
+@media only screen and (max-width: 680px) {
+  .minpic {
+    min-height: 326.28px ;
+  }
+}
+
+hr.hor-line {
+    width:20%;
+    border: 1px solid #fff;
+    margin-bottom: 0;
 }
