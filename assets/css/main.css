@@ -124,12 +124,12 @@ header {
 }
 
 .bgcolhead {
-    background-color: #C00A27;
+    background-color: #020000;
 }
 
 .navbar-light .navbar-nav .nav-item .nav-link:hover,
 .navbar-light .navbar-nav .nav-item.active .nav-link {
-    background: #262626;
+    background: #141414;
     color: #fff;
 }
 .nav > .active > a {
@@ -142,8 +142,13 @@ header {
 
 
 .navbar-light .navbar-nav .nav-item .nav-link {
-    color: #262626;
+    color: #fff;
     padding: 5px 15px;
+}
+.navbar-light .navbar-toggler {
+    
+    border: 2px solid #fff;
+    
 }
 
 .navbar-light .navbar-toggler {
@@ -155,7 +160,7 @@ header {
 }
 
 .navbar-collapse {
-    background: #C00A27;
+    background: #020000;
 }
 
 .nav-item {
@@ -195,16 +200,28 @@ bottom: initial;
     color: #FFF;
 }
 
+.bg-danger {
+    background-color: #e50914!important;
+}
+
+.text-danger {
+    color: #e50914!important;
+}
+
+label{
+    background-color: #141414;
+}
+
 /* VARUN */
 
 footer {
-    background: #891A1F;
+    background: #141414;
 }
 
 .copy {
     margin-top: 20px;
     color: black;
-    background-color: #B22222;
+    background-color: #141414;
 }
 
 .list {
@@ -217,11 +234,11 @@ footer {
 }
 
 .contacts {
-    color: white;
+    color:#808080;
 }
 
 .time {
-    color: white;
+    color: #808080;
 }
 
 .maps {
@@ -232,7 +249,7 @@ footer {
 }
 
 .location {
-    color: white;
+    color: #808080;
 }
 
 body {
@@ -265,7 +282,7 @@ body {
 }
 
 .partner {
-    color: white;
+    color: #808080;
 }
 
 .button-div {
@@ -373,7 +390,7 @@ body {
 a.text-light:focus,
 a.text-light:hover,
 a[aria-expanded="true"] {
-background-color:#BD2130 !important;
+background-color:#e50914 !important;
 color: white !important;
 }
 a[aria-expanded="true"]:hover {
