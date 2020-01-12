@@ -24,3 +24,8 @@ $('.main-content .owl-carousel').owlCarousel({
 		}
 	}
 });
+function supert() {
+	var p = document.getElementById('m');
+	p.style.backgroundColor = "blue";
+	console.log(123);
+}

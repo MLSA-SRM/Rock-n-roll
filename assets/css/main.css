@@ -1,8 +1,7 @@
-@import url('https://fonts.googleapis.com/css?family=Hepta+Slab&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Indie+Flower&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap');
 html {
     scroll-behavior: smooth;
+    font-family: 'Roboto', sans-serif;
 }
 
 .pad {
@@ -326,7 +325,6 @@ body {
     }
     #myTabContent {
         color: white;
-        /* May or may not work out well with different backgrounds; maybe blur image?*/
     }
 }
 
@@ -383,10 +381,6 @@ body {
     background-position: center;
     background-repeat: no-repeat;
 }
-
-/*a[aria-expanded="true"]{
-  background-color: #42DCA3 !important;
-}*/
 a.text-light:focus,
 a.text-light:hover,
 a[aria-expanded="true"] {
