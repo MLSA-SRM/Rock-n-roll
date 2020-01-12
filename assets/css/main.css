@@ -407,3 +407,79 @@ hr.hor-line {
     border: 1px solid #fff;
     margin-bottom: 0;
 }
+
+
+/*carousel*/
+.cardyb {
+    background: #E50914;
+    border-radius: 5px;
+    min-height: 290px;
+}
+.cardyb p {
+    color: #fff;
+}
+.cardyb a {
+    text-decoration: none;
+}
+.information {
+    display: inline-block;
+    position: absolute;
+    bottom:20px;
+
+}
+.information span {
+    margin-left: 20px;
+}
+.icons {
+    margin-left: 20px;
+}
+.introduce:hover .pic {
+    transform: scale(1.1);
+}
+.avatar {
+    height: 70px;
+    width: 70px;
+    margin-left: 20px;
+    border-radius: 50%;
+    transition: all .2s ease-in-out;
+    display: inline-block;
+}
+.parent {
+    overflow:hidden;
+    background: #141414;
+}
+.owl-carousel .owl-stage {
+    display: flex;
+    align-items: center;
+}
+.main-content {
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.main-content .owl-theme .custom-nav {
+    position: absolute;
+    top: 20%;
+    left: 0;
+    right: 0;
+}
+.main-content .owl-theme .custom-nav .owl-prev,
+.main-content .owl-theme .custom-nav .owl-next {
+    position: absolute;
+    height: 100px;
+    color: inherit;
+    background: none;
+    border: none;
+    z-index: 100;
+}
+.main-content .owl-theme .custom-nav .owl-prev i,
+.main-content .owl-theme .custom-nav .owl-next i {
+    font-size: 2.5rem;
+    color: #cecece;
+}
+.main-content .owl-theme .custom-nav .owl-prev {
+    left: 0;
+}
+.main-content .owl-theme .custom-nav .owl-next {
+    right: 0;
+}
